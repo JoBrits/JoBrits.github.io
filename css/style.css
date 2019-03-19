@@ -2987,6 +2987,7 @@ p,
                 border-bottom: 1px solid #fff; } }
             @media only screen and (max-width: 37.5em) {
               .navigation3__mega-menu__segments__bar__segment__btn--active {
+                font-family: "FNBSansBold", sans-serif;
                 margin-bottom: 0;
                 border-bottom: 0px;
                 padding-left: 2.5rem;
@@ -3093,7 +3094,8 @@ p,
             @media only screen and (max-width: 56.25em) {
               .navigation3__mega-menu__content__bar__header--active {
                 position: relative;
-                left: 0%; } }
+                left: 0%;
+                border-bottom: 0px; } }
             @media only screen and (max-width: 37.5em) {
               .navigation3__mega-menu__content__bar__header--active {
                 padding: 2.5rem 2.5rem 2.5rem 7.5rem;
