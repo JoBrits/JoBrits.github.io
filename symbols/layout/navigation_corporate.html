@@ -1,0 +1,97 @@
+<!-- Segements Menu -->
+<div class="navigation__segments">
+    <div class="navigation__segments__nav">
+        <ul class="navigation__segments__list1">
+            <li class="navigation__segments__item"><a href="../../index.html" class="navigation__segments__link">Personal</a></li>
+            <li class="navigation__segments__item"><a href="../../index_business.html" class="navigation__segments__link">Business</a></li>
+            <li class="navigation__segments__item"><a href="../../index_private.html" class="navigation__segments__link">Private</a></li>
+            <li class="navigation__segments__item"><a href="../../index_corporate.html" class="navigation__segments__link navigation__segments__link__active">Corporate</a></li>
+        </ul>   
+        <ul class="navigation__segments__list2">    
+            <li class="navigation__segments__item"><a href="#" class="navigation__segments__link">About us</a></li>
+            <li class="navigation__segments__item"><a href="#" class="navigation__segments__link">Contact us</a></li>
+            <li class="navigation__segments__item"><a href="#" class="navigation__segments__link hide">Country</a><span class="hide navigation__segments__flag"></span></li>
+        </ul>   
+    </div>
+</div>
+
+<!-- Logo + Search + Login -->
+<div class="navigation__menu">     
+    <div class="navigation__menu__nav">
+        <div class="navigation__menu__nav__list-1">
+            <div class="navigation__menu__nav__logo hide"><img width="100%" src="../../../img/base/FNB_Logo.svg"></div> 
+        </div>    
+        <div class="navigation__menu__nav__list-2">
+            <div class="navigation__menu__nav__search hide">                                
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Fnb">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="../../../img/sprite.svg#icon-magnifying-glass"></use>    
+                        </svg>    
+                    </button>
+                </form>
+            </div>
+            <div class="navigation__menu__nav__login"><a href="#" class="navigation__menu__nav__login__btn btn--amber">Login</a></div>
+            <div class="navigation__menu__nav__logo show"><img width="100%" src="../../../img/base/FNB_Logo.svg"></div> 
+        </div>    
+    </div> 
+</div> 
+
+<!-- Burger Menu -->
+<input type="checkbox" class="navigation__menu__checkbox" id="navi-toggle">
+<label for="navi-toggle" class="navigation__menu__button">   
+    <span class="navigation__menu__icon">&nbsp;</span>
+    <span class="navigation__menu__label1 hide">Menu</span>
+    <span class="navigation__menu__label2 hide">Close</span>
+</label> 
+
+<!-- Mega Menu -->
+<div class="navigation__menu__tint"></div> 
+<div class="navigation__menu__background">
+    <!-- PC MENU -->
+    <div class="navigation__mega-menu" id="megaMenu">
+        <div class="navigation__mega-menu__line">&nbsp</div>
+        <!-- Corporate & Investment Banking in Africa -->
+        <div class="navigation__mega-menu__btn  navigation__mega-menu__active">   
+            <div class="navigation__mega-menu__header">Products</div>
+            <ul class="navigation__mega-menu__content navigation__mega-menu__content__links">
+                <li class="navigation__mega-menu__content__links__sub-header">Corporate & Investment Banking in Africa
+                    <ul class="navigation__mega-menu__content__links__products">
+                        <li><a class="navigation__mega-menu__content__links__products__link" href="">Learn more</a></li>     
+                        <li><a class="navigation__mega-menu__content__links__products__link" href="">Get in touch</a></li>     
+                    </ul>    
+                </li>
+            </ul>  
+        </div>  
+    </div> 
+    
+    <!-- PH MENU -->
+    <div class="navigation__mega-menu-phone" id="megaMenuPhone">
+        <div class="nav__phone">
+            <div class="navigation__mega-menu-phone__phone__segment">Personal</div>    
+            <div class="navigation__mega-menu-phone__phone__menu"></div>     
+        </div>
+        <!-- Products -->
+        <div class="navigation__mega-menu-phone__btn-container">
+            <span class="navigation__mega-menu-phone__back" onclick="backBtn()"></span>   
+            <div class="navigation__mega-menu-phone__header"><span class="navigation__mega-menu-phone__header--padding">Products</span>
+                <ul class="navigation__mega-menu-phone__content navigation__mega-menu__content__links">
+                    <li class="navigation__mega-menu-phone__content__links__sub-header" >Corporate & Investment Banking in Africa
+                        <ul class="navigation__mega-menu-phone__content__links__products">
+                            <li><a class="navigation__mega-menu-phone__content__links__products__link" href="">Learn more</a></li>     
+                            <li><a class="navigation__mega-menu-phone__content__links__products__link" href="">Get in touch</a></li>     
+                        </ul>    
+                    </li>
+                </ul>       
+            </div>     
+        </div>  
+    </div>           
+</div> 
+
+<!-- Menu JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script type="text/javascript" src="../../../js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="../../../js/nav.js"></script>
+
+

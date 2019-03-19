@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="btt/arrow/back-to-top" transform="translate(-153.000000, -11.000000)" stroke="#000000" stroke-width="2">
+            <g id="Group-2" transform="translate(64.000000, 3.000000)">
+                <g id="chevron" transform="translate(91.000000, 10.000000)">
+                    <path d="M0,0 L6,6" id="Line" transform="translate(3.000000, 3.000000) rotate(-90.000000) translate(-3.000000, -3.000000) "></path>
+                    <path d="M6,0 L12,6" id="Line" transform="translate(9.000000, 3.000000) scale(-1, 1) rotate(-90.000000) translate(-9.000000, -3.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
