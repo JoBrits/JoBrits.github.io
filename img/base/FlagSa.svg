@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 16 0 16"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shutterstock_166107953">
+            <g id="Flag">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polyline id="Fill-1" fill="#FFFFFE" mask="url(#mask-2)" points="12.5295456 10 3 16 24 16 24 15.998278 4.88837685 15.998278 12.8513147 10.9998565 24 10.9998565 24 10 12.5295456 10"></polyline>
+                <polyline id="Fill-3" fill="#FFFFFE" mask="url(#mask-2)" points="24 6 24 4.99918981 12.8489967 4.99918981 4.8844032 0 3 0 12.5271607 6 24 6"></polyline>
+                <polyline id="Fill-4" fill="#147353" mask="url(#mask-2)" points="24 9.59908148 24 6.39997037 12.4774815 6.39997037 2.90906667 0 0 0 0 1.90844444 9.11768889 7.99985185 0 14.0719111 0 16 2.90468148 16 12.4774815 9.59908148 24 9.59908148"></polyline>
+                <polyline id="Fill-6" fill="#F1AE2A" mask="url(#mask-2)" points="7.10867276 8.00969022 0 12.7333436 0 14 9 8.00954406 0 2 0 3.28603688 7.10867276 8.00969022"></polyline>
+                <polyline id="Fill-7" fill="#0A0B09" mask="url(#mask-2)" points="7 8 0 3 0 13 7 8"></polyline>
+                <polyline id="Fill-8" fill="#D03C2E" mask="url(#mask-2)" points="24 5 24 0 5 0 12.9164296 5 24 5"></polyline>
+                <polyline id="Fill-9" fill="#292D6A" mask="url(#mask-2)" points="5 16 24 16 24 11 12.9164296 11 5 16"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

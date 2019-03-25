@@ -8,21 +8,32 @@
             <span class="navigation3__navBar__menu__label1">Menu</span>
             <span class="navigation3__navBar__menu__label2">Close</span>
         </div>
+        <ul class="navigation3__navBar__menu__group">
+            <li class="navigation3__navBar__menu__group__link">About us</li>
+            <li class="navigation3__navBar__menu__group__link">Contact us</li>
+            <li class="navigation3__navBar__menu__group__link navigation3__navBar__menu__group__link__country">Country</li>
+        </ul>
         <!-- MOBILE MENU TRIGGER -->
-        <div class="navigation3__navBar__menu__button show" id="menuID" onclick="menuTrigerMobile()">   
-            <span class="navigation3__navBar__menu__icon"></span>
+        <div class="navigation3__navBar__menu__button show" id="menuID" onclick="menuTrigerMobile()"></div>
+        <!-- SEARCH TRIGGER -->
+        <div class="navigation3__navBar__menu__search  navigation3__navBar__menu__search__btn">
+            <input class="navigation3__navBar__menu__search__input" type="text"  id="search-toggle">
+            <div class="navigation3__navBar__menu__search__bg">
+                <br/><br/><br/>
+                <span class="heading heading--3 home__slide6__form-content--heading-align">Search Results Demo</span>
+                <a class="textBtn" href="">Result 1 </a> <br/>
+                <a class="textBtn" href="">Result 2 </a>  <br/>
+                <a class="textBtn" href="">Result 3 </a>  <br/>
+                <a class="textBtn" href="">Result 4 </a>  <br/>
+            </div>  
         </div>
-        <div class="navigation3__navBar__menu__search hide">                                
-            <svg class="navigation3__navBar__menu__search__icon2">
-                <use xlink:href="../../../img/sprite.svg#icon-magnifying-glass"></use>    
-            </svg>
+        <div class="navigation3__navBar__menu__login" onclick="loginBtn()">
+                <a href="#" class="navigation3__navBar__menu__login__btn btn--amber " >Login</a>
+                <a href="#" class="navigation3__navBar__menu__login__btn__close" ></a>
         </div>
-        <div class="navigation3__navBar__menu__login hide">
-            <a href="#" class="navigation3__navBar__menu__login__btn btn--amber">Login</a>
-        </div> 
+        </div>
     </div>
-</div> 
-
+ 
 <!-- Mega Menu -->
 <div class="navigation3__navBar__menu__tint hide" onclick="menuTriger()"></div> 
 <div class="navigation3__navBar__menu__tint show" onclick="menuTrigerMobile()"></div> 
@@ -37,9 +48,15 @@
                 <div class="navigation3__mega-menu__segments__bar__segment">
                     <div class="navigation3__mega-menu__segments__bar__segment__btn hide" id="segMe" onclick="segmentTriger('me')">For me</div>  
                     <div class="navigation3__mega-menu__segments__bar__segment__btn hide" id="segMyB" onclick="segmentTriger('myBusiness')">For my business</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn hide" id="segMyF" onclick="segmentTriger('myFamily')">For my family</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn hide" id="segMyP" onclick="segmentTriger('myPrivateBanking')">Private banking</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn hide" id="segMyC" onclick="segmentTriger('myCorporateBanking')">Corporate banking</div>  
                     
                     <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMeMobile" onclick="segmentTrigerMobile('me')">For me</div>  
-                    <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMyBMobile" onclick="segmentTrigerMobile('myBusiness')">For my business</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMyBMobile" onclick="segmentTrigerMobile('myBusiness')">For my business</div> 
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMyFMobile" onclick="segmentTrigerMobile('myFamily')">For my family</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMyPMobile" onclick="segmentTrigerMobile('myPrivateBanking')">Private banking</div>  
+                    <div class="navigation3__mega-menu__segments__bar__segment__btn show" id="segMyCMobile" onclick="segmentTrigerMobile('myCorporateBanking')">Corporate banking</div>  
 
                     <div class="navigation3__mega-menu__back show" id="backBtnMobile" onclick="backBtnMobile()"></div> 
                 </div>
@@ -48,106 +65,80 @@
             <!-- FOR ME -->
             <div class="navigation3__mega-menu__content__bar " id="forMeMenu">
                 <!-- Financial Services -->
-                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5"> 
-                        
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5">                     
                     <div class="navigation3__mega-menu__content__bar__header " id="firstMeHeader">Financial Services</div>
-                    
                     <ul class="navigation3__mega-menu__content__bar__links " id="firstMeLinks">
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Day to day
                             <ul class="navigation3__mega-menu__content__bar__links__products">
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Bank  accounts</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eWallet</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Lifestyle accounts</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global accounts</a></li>      
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global accounts</a></li>        
                             </ul>    
                         </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Invest
                             <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Savings & Investments</a></li>      
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Ways to bank</a></li>
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Overdraft</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Loans</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Home loans</a></li>    
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Savings & Investments</a></li>
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Unit trusts & shares</a></li>
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Offshore banking</a></li>
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Retirement</a></li>   
                             </ul>    
                         </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Borrow
                             <ul class="navigation3__mega-menu__content__bar__links__products">    
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Vehicle finance</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Forex</a></li>       
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Wills and trusts</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Financial planning</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Overdraft</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Loans</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Home loans</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Vehicle finance</a></li>       
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Insure
+                            <ul class="navigation3__mega-menu__content__bar__links__products">    
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Personal cover</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Car insurance</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Home insurance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Law on Call</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Travel insurance</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Takaful</a></li>       
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Forex
+                            <ul class="navigation3__mega-menu__content__bar__links__products">    
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/index.html">Overview</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/payments/index.html">Transact</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/investments/index.html">Invest</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/travel/index.html">Travel</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/non_resident_banking/index.html">Non-resident Banking</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="../../forex/regulatory_services/index.html">Regulatory services</a></li>       
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">Connect SIM & phones
+                            <ul class="navigation3__mega-menu__content__bar__links__products">    
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Why Connect?</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Smart devices</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Coverage map</a></li>       
                             </ul>    
                         </li>
                     </ul>
-                </div>
-                <!-- Me and FNB -->
-                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5">
-                    <div class="navigation3__mega-menu__content__bar__header">Me and FNB</div>
-                    <ul class="navigation3__mega-menu__content__bar__links">
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
-                            <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & salary switching</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Progress tracking</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Process verifications</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Uploads & downloads</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB approved suppliers</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eWallet balance enquiry</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">iContract</a></li>     
-                            </ul>    
-                        </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
-                            <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for smartphones</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for tablets</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Watch App</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Cellphone Banking</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Telephone</a></li>     
-                            </ul>            
-                        </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
-                            <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB Pay</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Partner Wallets</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Security & Technology</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Whats new</a></li>     
-                            </ul>
-                        </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
-                            <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Home</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Car</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Money</a></li>     
-                            </ul>
-                        </li>  
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
-                            <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Press Office</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Economics commentary</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Insights</a></li>     
-                            </ul>
-                        </li>  
-                    </ul> 
                 </div>
                 <!-- Rewards -->
                 <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
                     <div class="navigation3__mega-menu__content__bar__header">Rewards</div>
                     <ul class="navigation3__mega-menu__content__bar__links">
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">eBucks
                             <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">About eBucks</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eBucks calculator</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eBucks shop</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eBucks travel</a></li>     
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eBucks card</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">About </a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Calculator</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Shop</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Travel</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Card</a></li>     
                             </ul>    
                         </li>
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">SLOW
                             <ul class="navigation3__mega-menu__content__bar__links__products">
-                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SLOW Lounges</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Lounges</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SLOW in the City</a></li>     
                             </ul>            
                         </li>                   
@@ -157,7 +148,7 @@
                 <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
                     <div class="navigation3__mega-menu__content__bar__header">Rates & Pricing</div>
                     <ul class="navigation3__mega-menu__content__bar__links">
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--4">Information on
                             <ul class="navigation3__mega-menu__content__bar__links__products">
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Product rates</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Pricing guide</a></li>     
@@ -173,7 +164,7 @@
                 <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
                     <div class="navigation3__mega-menu__content__bar__header">Careers</div>
                     <ul class="navigation3__mega-menu__content__bar__links">
-                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--4">Information on
                             <ul class="navigation3__mega-menu__content__bar__links__products">
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Working at FNB</a></li>     
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Experienced hires</a></li>     
@@ -184,13 +175,491 @@
                         
                     </ul>           
                 </div> 
+                <!-- Why FNB -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5">
+                    <div class="navigation3__mega-menu__content__bar__header">Why FNB?</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Tools
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & salary switching</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Progress tracking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Process verifications</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Uploads & downloads</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB approved suppliers</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eWallet balance enquiry</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">iContract</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Ways to bank
+                            <ul class="navigation3__mega-menu__content__bar__links__products">      
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for smartphones</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for tablets</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Watch App</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Cellphone Banking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Telephone</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Payment solutions
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB Pay</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Partner Wallets</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Security & Technology</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">What's new</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">nav» igating life
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Home</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Car</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Money</a></li>     
+                            </ul>
+                        </li>  
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Articles
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Press Office</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Economics commentary</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Insights</a></li>     
+                            </ul>
+                        </li>  
+                    </ul> 
+                </div>
             </div>
             <!-- FOR MY BUSINESS -->
             <div class="navigation3__mega-menu__content__bar " id="forMyBusinessMenu">
+                <!-- Business banking -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
+                    <div class="navigation3__mega-menu__content__bar__header" id="firstBusHeader">Business banking</div>
+                    <ul class="navigation3__mega-menu__content__bar__links" id="firstBusLinks">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Transact
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business accounts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Specialised industry accounts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global accounts</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Invest
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Savings & cash investments</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">3PIM (3rd party investment manager)</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Borrow
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Overdraft</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Loans</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Financing solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Commercial property finance</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Insure
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Employer's Funeral Plan</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Key Person Insurance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Short-term insurance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Risk advisory</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Wealth & fiduciary</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Law on Call Business Plan</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Forex
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Transact</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Borrow</a></li>            
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>
+                <!-- Business solutions -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Business solutions</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Cash solutions
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SmartBOX™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SmartTILL™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM Advance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Bulk cash processing</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Merchant services
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Why choose us</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Our products</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Risk & fraud</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Legal</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Industry expertise
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global Commercial Banking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Agriculture</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Public Sector</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Education</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Healthcare</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Franchise</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Motor Dealership</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Tourism</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Financial management
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Fleet management services</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">DocTrail™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Accounting Solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Payroll</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Cashflow</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Invoicing</a></li>     
+                            </ul>
+                        </li>  
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Registrations
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business Directory</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">The dti initiatives</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">CIPC + BEE</a></li>     
+                            </ul>
+                        </li> 
+                    </ul> 
+                </div>    
+                <!-- Rewards -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Rewards</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">eBucks
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">SLOW 
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Lounges</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SLOW in the City</a></li>     
+                            </ul>            
+                        </li>                   
+                    </ul> 
+                </div>      
+                <!-- Rates & Pricing -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Rates & Pricing</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--4">Information on
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Product rates</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Pricing guide</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Foreign exchange rates</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Lending rates</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SA indicators</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FirstRand share price</a></li>       
+                            </ul>
+                        </li> 
+                    </ul> 
+                </div>   
+                <!-- Why FNB -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--5 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Why FNB?</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Banking services
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">KYC / FICA</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & recipient switching</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Electronic alerts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Employee  solutions</a></li> 
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Financial advisory</a></li>    
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Tools
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & salary switching</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Progress tracking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Process verifications</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Uploads & downloads</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB approved suppliers</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eWallet balance enquiry</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">iContract</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">Banking with us
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking Enterprise™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for smartphones</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for tablets</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking for Business</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--5">nav» igating life
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Home</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Car</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Money</a></li>     
+                            </ul>
+                        </li>  
+                    </ul> 
+                </div>  
+            </div>
+            <!-- FOR MY FAMILY -->
+            <div class="navigation3__mega-menu__content__bar " id="forMyFamilyMenu">
+                <!-- Family Bundles -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--4 ">
+                    <div class="navigation3__mega-menu__content__bar__header" id="firstFamHeader">Family Bundles</div>
+                    <ul class="navigation3__mega-menu__content__bar__links" id="firstFamLinks">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--4">Wills, Trusts & Estates
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Wills</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Trusts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Estate planning</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Estate administration</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Wills & trusts health check</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--4">Financial planning
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Personal goals</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Child's education</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Emergencies</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Retirement</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Tax-free solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Estate & legacy planning</a></li>     
+                            </ul>            
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            <!-- FOR PRIVATE BANKING -->
+            <div class="navigation3__mega-menu__content__bar " id="forMyPrivateMenu">
                 <!-- Products -->
                 <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
-                    <div class="navigation3__mega-menu__content__bar__header" id="firstBusHeader">Products</div>
-                    <ul class="navigation3__mega-menu__content__bar__links" id="firstBusLinks">
+                    <div class="navigation3__mega-menu__content__bar__header" id="firstPvtHeader">Private Bundles</div>
+                    <ul class="navigation3__mega-menu__content__bar__links" id="firstPvtLinks">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business accounts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Specialised industry accounts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global accounts</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Savings & cash investments</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">3PIM (3rd party investment manager)</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Credit cards</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Overdraft</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Loans</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Financing solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Commercial property finance</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Employer's Funeral Plan</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Key Person Insurance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Short-term insurance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Risk advisory</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Wealth & fiduciary</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Law on Call Business Plan</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Transact</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Borrow</a></li>            
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>
+                <!-- Business solutions -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Business solutions</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SmartBOX™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SmartTILL™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM Advance</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Bulk cash processing</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Why choose us</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Our products</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Risk & fraud</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Legal</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Global Commercial Banking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Agriculture</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Public Sector</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Education</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Healthcare</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Franchise</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Motor Dealership</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Tourism</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Fleet management services</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">DocTrail™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Accounting Solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Payroll</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Cashflow</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant Invoicing</a></li>     
+                            </ul>
+                        </li>  
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business Directory</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">The dti initiatives</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">CIPC + BEE</a></li>     
+                            </ul>
+                        </li>  
+                    </ul> 
+                </div>
+                <!-- Services -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Services</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">KYC / FICA</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & recipient switching</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Electronic alerts</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Employee  solutions</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Financial advisory</a></li>     
+                            </ul>            
+                        </li>                   
+                    </ul> 
+                </div>     
+                <!-- Rewards -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Rewards</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eBucks rewards for business</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SLOW Lounges</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SLOW in the City</a></li>     
+                            </ul>            
+                        </li>                   
+                    </ul> 
+                </div>     
+                <!-- Ways to bank -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Ways to bank</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Debit order & salary switching</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Progress tracking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Process verifications</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Uploads & downloads</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FNB approved suppliers</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">eWallet balance enquiry</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">iContract</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking Enterprise™</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for smartphones</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">App for tablets</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Online Banking for Business</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Home</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Car</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">nav» Money</a></li>     
+                            </ul>
+                        </li>  
+                    </ul> 
+                </div>     
+                <!-- Information -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header">Information</div>
+                    <ul class="navigation3__mega-menu__content__bar__links">
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Instant accounting solutions</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Demos</a></li>     
+                            </ul>    
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">24/7 Business desk</a></li>     
+                            </ul>            
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Latest scam</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Protect yourself</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Digital fraud</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Other types of fraud</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Documents & contacts</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">ATM locator</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Branch locator</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Book a branch visit</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business Directory</a></li>       
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Home loans</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Day-to-day banking</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Shares</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Forex</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Vehicle repayment</a></li>     
+                            </ul>
+                        </li>
+                        <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
+                            <ul class="navigation3__mega-menu__content__bar__links__products">
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Product rates</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Pricing guide</a></li>     
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Foreign exchange rates</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Lending rates</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">SA indicators</a></li>       
+                                <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">FirstRand share price</a></li>       
+                            </ul>
+                        </li>
+                    </ul>           
+                </div> 
+            </div>
+            <!-- FOR CORPORATE BANKING -->
+            <div class="navigation3__mega-menu__content__bar " id="forMyCorporateMenu">
+                <!-- Products -->
+                <div class="navigation3__mega-menu__content__bar__btn navigation3__mega-menu__content__bar__btn--6 ">
+                    <div class="navigation3__mega-menu__content__bar__header" id="firstCorHeader">Corporate bundles</div>
+                    <ul class="navigation3__mega-menu__content__bar__links" id="firstCorLinks">
                         <li class="navigation3__mega-menu__content__bar__links__sub-header navigation3__mega-menu__content__bar__links__sub-header--6">
                             <ul class="navigation3__mega-menu__content__bar__links__products">
                                 <li><a class="navigation3__mega-menu__content__bar__links__products__link" href="">Business accounts</a></li>     

@@ -22,21 +22,24 @@
             <div class="navigation__menu__nav__logo hide"><img width="100%" src="../../../img/base/FNB_Logo.svg"></div> 
         </div>    
         <div class="navigation__menu__nav__list-2">
-            <div class="navigation__menu__nav__search hide">                                
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search Fnb">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="../../../img/sprite.svg#icon-magnifying-glass"></use>    
-                        </svg>    
-                    </button>
-                </form>
+            <div class="navigation__menu__nav__search  navigation__menu__nav__search__btn">
+                <input class="navigation__menu__nav__search__input" type="text"  id="search-toggle">
+                <div class="navigation__menu__nav__search__bg">
+                    <span class="heading heading--3 home__slide6__form-content--heading-align">Search Results Demo</span>
+                    <a class="textBtn" href="">Result 1 </a> <br/>
+                    <a class="textBtn" href="">Result 2 </a>  <br/>
+                    <a class="textBtn" href="">Result 3 </a>  <br/>
+                    <a class="textBtn" href="">Result 4 </a>  <br/>
+                </div>  
             </div>
-            <div class="navigation__menu__nav__login"><a href="#" class="navigation__menu__nav__login__btn btn--amber">Login</a></div>
+            <div class="navigation__menu__nav__login" onclick="loginBtn()">
+                <a href="#" class="navigation__menu__nav__login__btn btn--amber " >Login</a>
+                <a href="#" class="navigation__menu__nav__login__btn__close" ></a>
+            </div>
             <div class="navigation__menu__nav__logo show"><img width="100%" src="../../../img/base/FNB_Logo.svg"></div> 
         </div>    
     </div> 
-</div> 
+</div>  
 
 <!-- Burger Menu -->
 <input type="checkbox" class="navigation__menu__checkbox" id="navi-toggle">
@@ -509,6 +512,56 @@
             </div>         
         </div>   
     </div>           
+</div> 
+
+<!-- Login Menu -->
+<div class="navigation__menu__tint2" id="tint"></div> 
+<div class="navigation__menu__background2" id="Bg">
+    <!-- Login MENU -->
+    <div class="navigation__login-menu" id="login-menu">   
+        <div class="slide__content">
+            <div class="row row__height13 home__slide6__content--flex">
+                <div class="home__slide6__content--flex__1">
+                    <div class="home__slide6__form-content row__height13">
+                        <span class="heading heading--3 home__slide6__form-content--heading-align">Bank on the move</span>
+                        <span class="heading heading--4 home__slide6__form-content--heading-align">Get the FNB banking app & take your banking to the next level.</span>
+                        <p class="paragraph--tick">Login with your fingerprints</p>
+                        <p class="paragraph--tick">Manage your finance with nav» Money</p>
+                        <p class="paragraph--tick">Easily buy airtime & electricity</p>
+                        <div class="navigation__login-menu__stores">
+                            <a href="" class="btn btn--imageWhite  btn--short btn--shadow navigation__login-menu__stores__btn"><img width="80%" src="img/base/download_white_android.jpg"></a>
+                            <a href="" class="btn btn--imageWhite  btn--short btn--shadow"><img width="80%" src="img/base/download_white_apple.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__slide6__content--flex__2 hide">
+                    <div class="row__height13 line--vertical">&nbsp;</div>
+                </div>
+                <div class="home__slide6__content--flex__3">
+                    <div class="home__slide6__form-content row__height13">
+                        <span class="heading heading--3 home__slide6__form-content--heading-align">Login to banking</span>
+                        <form class="">
+                            <div class="form">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Username</label>
+                            </div>
+                            <div class="form">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Password</label>
+                            </div>
+                        </form>
+                        <div><a class="btn btn--amber btn--shadow home__slide6__form-content--button-align" href="">Login </a></div>
+                        <div><a class="btn btn--white btn--shadow home__slide6__form-content--button-align" href="">Register </a></div>
+                        <a class="textBtn" href="">Forgot Password </a>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div> 
 </div> 
 
 <!-- Menu JS -->
