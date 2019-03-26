@@ -2404,6 +2404,7 @@ p,
         position: absolute;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         list-style: none;
         font-size: 1.6rem;
         color: #000;
@@ -2412,7 +2413,8 @@ p,
         height: auto;
         overflow: hidden;
         transition: all .2s;
-        opacity: 1; }
+        opacity: 1;
+        width: 50%; }
         .navigation2__navBar__menu__group--black {
           height: 0;
           opacity: 0; }
@@ -2425,7 +2427,7 @@ p,
             margin-right: 2rem; }
           .navigation2__navBar__menu__group__link__country {
             height: 16px;
-            padding-right: 15%;
+            padding-right: 10%;
             background-image: url(../../img/base/FlagSa.svg);
             background-position: right;
             background-repeat: no-repeat; }
@@ -2691,7 +2693,8 @@ p,
           width: 100%; } }
       @media only screen and (max-width: 37.5em) {
         .navigation2__mega-menu__segments__bar {
-          height: 7.5rem; } }
+          height: 7.5rem;
+          overflow: hidden; } }
       .navigation2__mega-menu__segments__bar__segment {
         display: flex;
         flex-direction: column; }
@@ -2701,6 +2704,12 @@ p,
             justify-content: space-between;
             left: 2.5rem;
             position: relative; } }
+        @media only screen and (max-width: 37.5em) {
+          .navigation2__mega-menu__segments__bar__segment {
+            position: relative;
+            width: auto;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch; } }
         .navigation2__mega-menu__segments__bar__segment__btn {
           position: relative;
           font-size: 2rem;
@@ -3870,9 +3879,9 @@ p,
   background-position: center top; }
   @media only screen and (max-width: 37.5em) {
     .homeB__slide1 {
-      background-image: url(../../img/landing/backgrounds/slide_01b.jpg);
+      background-image: linear-gradient(to right bottom, #01aaad, rgba(0, 102, 102, 0)), url(../../img/landing/backgrounds/slide_01b.jpg);
       background-size: cover;
-      background-position: bottom; } }
+      background-position: -70% 20px; } }
 
 .business__slide1 {
   background-image: url(../../img/homePage_business/pc/Business_Banner1.jpg);
