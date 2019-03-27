@@ -2255,6 +2255,18 @@ p,
       .navigation__login-menu__stores__btn {
         margin-right: 2rem; }
 
+.navigation_business {
+  height: 12rem;
+  position: fixed; }
+
+.navigation_private {
+  height: 12rem;
+  position: fixed; }
+
+.navigation_corporate {
+  height: 12rem;
+  position: fixed; }
+
 .navigation2 {
   position: fixed; }
   .navigation2__navBar {
@@ -2823,6 +2835,11 @@ p,
             @media only screen and (max-width: 37.5em) {
               .navigation2__mega-menu__content__bar__btn--6 {
                 width: 100%; } }
+          .navigation2__mega-menu__content__bar__btn--phone {
+            display: none; }
+            @media only screen and (max-width: 37.5em) {
+              .navigation2__mega-menu__content__bar__btn--phone {
+                display: inline-block; } }
           .navigation2__mega-menu__content__bar__btn:not(:last-child) {
             margin-right: 2.5rem; }
             @media only screen and (max-width: 37.5em) {
@@ -2982,18 +2999,6 @@ p,
           z-index: 300;
           top: 8.5rem; } }
 
-.navigation_business {
-  height: 12rem;
-  position: fixed; }
-
-.navigation_private {
-  height: 12rem;
-  position: fixed; }
-
-.navigation_corporate {
-  height: 12rem;
-  position: fixed; }
-
 .navigation3 {
   position: fixed; }
   .navigation3__navBar {
@@ -3013,6 +3018,10 @@ p,
         .navigation3__navBar--active {
           width: 80%; } }
     .navigation3__navBar--black {
+      background-color: #fff;
+      height: 7.5rem;
+      transition: all .2s; }
+    .navigation3__navBar--login {
       background-color: #fff;
       height: 7.5rem;
       transition: all .2s; }
@@ -3098,7 +3107,7 @@ p,
         top: -.5rem;
         margin-left: 4rem;
         font-size: 2rem;
-        font-family: "FNBSansThin", sans-serif;
+        font-family: "FNBSansRegular", sans-serif;
         color: #fff;
         width: fit-content;
         opacity: 1;
@@ -3115,8 +3124,8 @@ p,
         top: -.5rem;
         margin-left: 4rem;
         font-size: 2rem;
-        font-family: "FNBSansThin", sans-serif;
-        color: #fff;
+        font-family: "FNBSansRegular", sans-serif;
+        color: #000;
         width: fit-content;
         opacity: 0;
         display: none;
@@ -3144,21 +3153,31 @@ p,
         position: absolute;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         list-style: none;
         font-size: 1.6rem;
         color: #fff;
         top: 2rem;
-        right: 0; }
+        right: 0;
+        height: auto;
+        overflow: hidden;
+        transition: all .2s;
+        opacity: 1;
+        width: 50%; }
         .navigation3__navBar__menu__group--black {
+          height: 0;
+          opacity: 0;
           display: none; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation3__navBar__menu__group {
+            display: none; } }
         .navigation3__navBar__menu__group__link {
           cursor: pointer; }
           .navigation3__navBar__menu__group__link:not(:last-child) {
             margin-right: 2rem; }
           .navigation3__navBar__menu__group__link__country {
-            width: 24px;
             height: 16px;
-            padding-right: 80px;
+            padding-right: 10%;
             background-image: url(../../img/base/FlagSa.svg);
             background-position: right;
             background-repeat: no-repeat; }
@@ -3183,7 +3202,7 @@ p,
           color: #9B9B9B;
           padding: 1rem 2rem;
           width: 15rem;
-          background-image: url(../../img/base/searchWht.svg);
+          background-image: url(../../img/base/SearchWht.svg);
           background-position: right;
           background-repeat: no-repeat;
           border-bottom: 1px solid transparent;
@@ -3211,8 +3230,6 @@ p,
           transition: all .2s;
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
           overflow: hidden; }
-          .navigation3__navBar__menu__search__bg--black {
-            top: 3.5rem; }
         .navigation3__navBar__menu__search__input:focus ~ .navigation3__navBar__menu__search__bg {
           content: "";
           height: 25rem;
@@ -3268,7 +3285,7 @@ p,
               background-color: transparent;
               display: inline-block;
               position: relative;
-              top: 1.4rem; }
+              top: -1rem; }
               .navigation3__navBar__menu__login__btn__close--active::before {
                 content: "";
                 width: 3rem;
@@ -3326,6 +3343,39 @@ p,
               top: -7.5rem;
               overflow-y: scroll;
               -webkit-overflow-scrolling: touch; } }
+      .navigation3__navBar__menu__tint2 {
+        position: absolute;
+        width: 100vw;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .3s,  height .1s; }
+        .navigation3__navBar__menu__tint2--active {
+          opacity: 1;
+          height: 100vh; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation3__navBar__menu__tint2 {
+            z-index: 200;
+            top: 0; } }
+      .navigation3__navBar__menu__background2 {
+        width: 100%;
+        top: -12rem;
+        background-color: #fff;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        z-index: 90;
+        transition: all .4s; }
+        .navigation3__navBar__menu__background2--active {
+          top: 0;
+          height: 55rem; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation3__navBar__menu__background2 {
+            min-height: 100vh;
+            top: -12.5rem;
+            width: 0;
+            z-index: 200; } }
   .navigation3__mega-menu {
     height: 100%;
     position: relative;
@@ -3392,14 +3442,26 @@ p,
           width: 100%; } }
       @media only screen and (max-width: 37.5em) {
         .navigation3__mega-menu__segments__bar {
-          height: 7.5rem; } }
+          top: .5rem;
+          height: 7.5rem;
+          overflow: hidden; } }
       .navigation3__mega-menu__segments__bar__segment {
         display: flex;
         flex-direction: column; }
         @media only screen and (max-width: 56.25em) {
           .navigation3__mega-menu__segments__bar__segment {
             flex-direction: row;
-            justify-content: space-between; } }
+            justify-content: space-between;
+            left: 2.5rem;
+            position: relative; } }
+        @media only screen and (max-width: 37.5em) {
+          .navigation3__mega-menu__segments__bar__segment {
+            position: relative;
+            width: auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            top: .5rem; } }
         .navigation3__mega-menu__segments__bar__segment__btn {
           position: relative;
           font-size: 2rem;
@@ -3417,9 +3479,11 @@ p,
               width: auto; } }
           @media only screen and (max-width: 37.5em) {
             .navigation3__mega-menu__segments__bar__segment__btn {
-              padding: 1.5rem;
+              padding-top: 1.5rem;
               position: relative;
-              width: auto; } }
+              width: auto;
+              overflow-x: scroll;
+              -webkit-overflow-scrolling: touch; } }
           .navigation3__mega-menu__segments__bar__segment__btn--active {
             margin-bottom: 4rem;
             border-bottom: 1px solid #fff;
@@ -3434,7 +3498,6 @@ p,
                 font-family: "FNBSansBold", sans-serif;
                 margin-bottom: 0;
                 border-bottom: 0px;
-                padding-left: 2.5rem;
                 min-width: max-content; } }
           .navigation3__mega-menu__segments__bar__segment__btn--in-active {
             font-family: "FNBSansThin", sans-serif;
@@ -3447,7 +3510,6 @@ p,
             @media only screen and (max-width: 37.5em) {
               .navigation3__mega-menu__segments__bar__segment__btn--in-active {
                 margin-bottom: 0;
-                padding-left: 2.5rem;
                 min-width: max-content; } }
         .navigation3__mega-menu__segments__bar__segment__btn:hover {
           color: #D8D8D8; }
@@ -3467,6 +3529,7 @@ p,
           top: 6rem; } }
       .navigation3__mega-menu__content__bar {
         position: relative;
+        display: none;
         top: 4rem;
         width: 80%; }
         @media only screen and (max-width: 56.25em) {
@@ -3508,6 +3571,11 @@ p,
             @media only screen and (max-width: 37.5em) {
               .navigation3__mega-menu__content__bar__btn--6 {
                 width: 100%; } }
+          .navigation3__mega-menu__content__bar__btn--phone {
+            display: none; }
+            @media only screen and (max-width: 37.5em) {
+              .navigation3__mega-menu__content__bar__btn--phone {
+                display: inline-block; } }
           .navigation3__mega-menu__content__bar__btn:not(:last-child) {
             margin-right: 2.5rem; }
             @media only screen and (max-width: 37.5em) {
@@ -3528,7 +3596,8 @@ p,
               padding-bottom: 0;
               height: auto;
               padding: 2.5rem;
-              min-width: max-content; } }
+              min-width: max-content;
+              color: #000; } }
           .navigation3__mega-menu__content__bar__header--active {
             font-family: "FNBSansBold", sans-serif;
             color: #000;
@@ -3610,7 +3679,9 @@ p,
               margin-right: 2.5rem; }
             @media only screen and (max-width: 37.5em) {
               .navigation3__mega-menu__content__bar__links__sub-header {
-                width: 100%; } }
+                width: 100%;
+                padding: 2.5rem;
+                color: #01aaad; } }
           .navigation3__mega-menu__content__bar__links__products {
             list-style: none;
             font-size: 1.6rem;
@@ -3635,7 +3706,10 @@ p,
                   border-bottom: 1px solid #D8D8D8;
                   font-family: "FNBSansRegular", sans-serif;
                   padding: 2.5rem;
-                  font-size: 2rem; } }
+                  font-size: 2rem;
+                  position: relative;
+                  left: -2.5rem;
+                  width: calc(5rem + 100%); } }
             .navigation3__mega-menu__content__bar__links__products__link:hover, .navigation3__mega-menu__content__bar__links__products__link:active {
               background-position: 100%;
               color: #01aaad !important;
@@ -3646,23 +3720,20 @@ p,
                 .navigation3__mega-menu__content__bar__links__products__link__active {
                   font-family: "FNBSansRegular", sans-serif; } }
     .navigation3__mega-menu__back {
-      display: none;
-      position: absolute;
-      height: 0; }
-      .navigation3__mega-menu__back--active {
-        display: none; }
-        @media only screen and (max-width: 37.5em) {
-          .navigation3__mega-menu__back--active {
-            display: block !important;
-            background-image: url(../../img/base/backArrowWhite.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            position: fixed;
-            left: 1.5rem;
-            width: 5rem;
-            height: 5rem;
-            z-index: 300;
-            top: 8.5rem; } }
+      height: 0;
+      display: none; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation3__mega-menu__back--active {
+          display: block !important;
+          background-image: url(../../img/base/backArrowWhite.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          position: fixed;
+          left: 1.5rem;
+          width: 5rem;
+          height: 5rem;
+          z-index: 300;
+          top: 8.5rem; } }
 
 .slide--full {
   position: relative;
