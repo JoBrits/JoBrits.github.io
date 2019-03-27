@@ -2967,23 +2967,20 @@ p,
                 .navigation2__mega-menu__content__bar__links__products__link__active {
                   font-family: "FNBSansRegular", sans-serif; } }
     .navigation2__mega-menu__back {
-      display: none;
-      position: absolute;
-      height: 0; }
-      .navigation2__mega-menu__back--active {
-        display: none; }
-        @media only screen and (max-width: 37.5em) {
-          .navigation2__mega-menu__back--active {
-            display: block !important;
-            background-image: url(../../img/base/backArrowWhite.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            position: fixed;
-            left: 1.5rem;
-            width: 5rem;
-            height: 5rem;
-            z-index: 300;
-            top: 8.5rem; } }
+      height: 0;
+      display: none; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation2__mega-menu__back--active {
+          display: block !important;
+          background-image: url(../../img/base/backArrowWhite.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          position: fixed;
+          left: 1.5rem;
+          width: 5rem;
+          height: 5rem;
+          z-index: 300;
+          top: 8.5rem; } }
 
 .navigation_business {
   height: 12rem;
