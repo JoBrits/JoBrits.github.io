@@ -2694,6 +2694,7 @@ p,
           width: 100%; } }
       @media only screen and (max-width: 37.5em) {
         .navigation2__mega-menu__segments__bar {
+          top: .5rem;
           height: 7.5rem;
           overflow: hidden; } }
       .navigation2__mega-menu__segments__bar__segment {
@@ -2710,7 +2711,9 @@ p,
             position: relative;
             width: auto;
             overflow-x: scroll;
-            -webkit-overflow-scrolling: touch; } }
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            top: .5rem; } }
         .navigation2__mega-menu__segments__bar__segment__btn {
           position: relative;
           font-size: 2rem;
