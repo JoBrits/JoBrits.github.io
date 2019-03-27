@@ -12,7 +12,7 @@ $breakpoints argument choices:
 -big-desktop
  
 ORDER: Base + typography > general layout + grid > page layout > components
-  
+
 1em = 16px
 
 */
@@ -90,7 +90,9 @@ body {
   height: 100%; }
 
 main {
-  position: relative; }
+  position: relative;
+  width: 100vw;
+  overflow: hidden; }
 
 ::selection {
   background-color: #01aaad;
@@ -939,7 +941,7 @@ p,
       height: 83.375rem; } }
   .footer__content {
     width: 80%;
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     display: block; }
     @media only screen and (max-width: 75em) {
