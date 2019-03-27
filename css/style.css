@@ -301,6 +301,13 @@ p,
     display: inline-block; }
     .btn--white::after {
       background-color: #fff; }
+  .btn--grey {
+    background-color: #9B9B9B;
+    color: #D8D8D8;
+    padding: 1rem 4rem;
+    display: inline-block; }
+    .btn--grey::after {
+      background-color: #9B9B9B; }
   .btn--turq {
     background-color: #01aaad;
     color: #fff;
@@ -933,9 +940,8 @@ p,
   .footer__content {
     width: 80%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin: 0 auto;
+    display: block; }
     @media only screen and (max-width: 75em) {
       .footer__content {
         width: 80%;
@@ -1257,6 +1263,13 @@ p,
   .row .black {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 2.5rem 2.5rem 2.5rem; }
+  .row .border--white {
+    border-right: 1px solid #fff;
+    height: 50rem; }
+  .row .border--grey {
+    border-right: 1px solid #9B9B9B; }
+  .row .border--black {
+    border-right: 1px solid #000; }
   .row .col-1-of-1 {
     width: 100%; }
   .row .col-1-of-1-to-2-of-3 {
@@ -4960,3 +4973,6 @@ p,
 
 .ds__slide1 {
   background-image: linear-gradient(to right bottom, #01aaad, #006666); }
+
+.ds__slide2 {
+  background-image: linear-gradient(to left bottom, #006666, #01aaad); }
