@@ -92,7 +92,8 @@ body {
 main {
   position: relative;
   width: 100vw;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block; }
 
 ::selection {
   background-color: #01aaad;
