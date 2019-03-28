@@ -1706,9 +1706,6 @@ p,
       .navigation__menu__nav__login {
         display: block;
         height: 4rem; }
-        @media only screen and (max-width: 37.5em) {
-          .navigation__menu__nav__login {
-            display: none; } }
         .navigation__menu__nav__login__btn {
           overflow: hidden;
           text-align: center; }
@@ -1725,7 +1722,13 @@ p,
             @media only screen and (max-width: 37.5em) {
               .navigation__menu__nav__login__btn, .navigation__menu__nav__login__btn:link, .navigation__menu__nav__login__btn:visited {
                 font-size: 2rem;
-                min-height: 4,375rem; } }
+                min-height: 4,375rem;
+                height: auto;
+                left: 6rem;
+                position: absolute; } }
+            @media only screen and (max-width: 37.5em) {
+              .navigation__menu__nav__login__btn, .navigation__menu__nav__login__btn:link, .navigation__menu__nav__login__btn:visited {
+                font-size: 1.6rem; } }
           .navigation__menu__nav__login__btn:visited {
             text-decoration: none;
             border-radius: 10rem;
@@ -1750,6 +1753,11 @@ p,
               display: inline-block;
               position: relative;
               top: 1.4rem; }
+              @media only screen and (max-width: 37.5em) {
+                .navigation__menu__nav__login__btn__close--active {
+                  right: 4rem;
+                  top: 8.5rem;
+                  position: absolute; } }
               .navigation__menu__nav__login__btn__close--active::before {
                 content: "";
                 width: 3rem;
@@ -1936,9 +1944,11 @@ p,
       .navigation__menu__tint2--active {
         opacity: 1;
         height: 100vh; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation__menu__tint2--active {
+            z-index: 210; } }
       @media only screen and (max-width: 37.5em) {
         .navigation__menu__tint2 {
-          z-index: 200;
           top: 0; } }
     .navigation__menu__background2 {
       width: 100%;
@@ -1956,9 +1966,12 @@ p,
       @media only screen and (max-width: 37.5em) {
         .navigation__menu__background2 {
           min-height: 100vh;
-          top: -12.5rem;
+          top: 0rem;
           width: 0;
-          z-index: 200; } }
+          z-index: 330;
+          position: absolute; }
+          .navigation__menu__background2--active {
+            width: 80vw; } }
   .navigation__mega-menu {
     z-index: 100;
     width: 80%;
@@ -2258,18 +2271,88 @@ p,
           margin-left: 5px; }
   .navigation__login-menu {
     height: 0;
-    overflow: hidden;
     transition: all 2s;
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__login-menu {
+        height: 100%; } }
+    .navigation__login-menu__bars {
+      position: relative; }
+      .navigation__login-menu__bars--top {
+        height: 5rem;
+        width: 80vw;
+        background-color: #01aaad;
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: center;
+        padding-top: 1.5rem; }
+      .navigation__login-menu__bars--bot {
+        height: 7.5rem;
+        width: 80vw;
+        background-color: #fff;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); }
     .navigation__login-menu--active {
       height: 100%; }
     .navigation__login-menu__stores {
       display: flex;
       justify-content: space-between;
       width: 110%;
-      padding-top: 6rem; }
+      padding-top: 6rem;
+      flex-wrap: wrap; }
       .navigation__login-menu__stores__btn {
         margin-right: 2rem; }
+    .navigation__login-menu__content {
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__login-menu__content {
+          width: 70%;
+          position: absolute;
+          top: 15rem;
+          left: 50%;
+          transform: translate(-50%, 0%); } }
+    .navigation__login-menu__content--flex {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; }
+      .navigation__login-menu__content--flex__1, .navigation__login-menu__content--flex__3 {
+        width: 40%; }
+      .navigation__login-menu__content--flex__2 {
+        width: 10%; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__login-menu__content--flex {
+          flex-direction: column;
+          width: 100%; }
+          .navigation__login-menu__content--flex__1, .navigation__login-menu__content--flex__2, .navigation__login-menu__content--flex__3 {
+            width: 100%; } }
+    .navigation__login-menu__form-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .navigation__login-menu__form-content--heading-align {
+        text-align: left; }
+      .navigation__login-menu__form-content--button-align {
+        position: relative;
+        left: 0;
+        transform: translate(0, 0);
+        width: 90%; }
+      .navigation__login-menu__form-content--height {
+        min-height: 20rem;
+        justify-content: flex-end; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__login-menu {
+        min-height: 90rem; }
+        .navigation__login-menu__form-content {
+          justify-content: center; }
+          .navigation__login-menu__form-content--heading-align {
+            text-align: left; }
+          .navigation__login-menu__form-content--button-align {
+            position: relative; }
+          .navigation__login-menu__form-content--button-align:hover {
+            position: relative; } }
 
 .navigation_business {
   height: 12rem;
@@ -2378,6 +2461,8 @@ p,
             top: 0;
             background-color: #000;
             transform: rotate(-135deg); }
+        .navigation2__navBar__menu__icon--hide {
+          display: none; }
       .navigation2__navBar__menu__button:hover .navigation2__navBar__menu__icon--active::before {
         top: 0; }
       .navigation2__navBar__menu__button:hover .navigation2__navBar__menu__icon--active::after {
@@ -2446,7 +2531,10 @@ p,
         width: 50%; }
         .navigation2__navBar__menu__group--black {
           height: 0;
-          opacity: 0; }
+          opacity: 0;
+          overflow: hidden; }
+        .navigation2__navBar__menu__group--hide {
+          display: none; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__group {
             display: none; } }
@@ -2524,7 +2612,9 @@ p,
           top: 0; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__login {
-            display: none; } }
+            position: absolute;
+            left: 6rem;
+            top: auto; } }
         .navigation2__navBar__menu__login__btn {
           overflow: hidden;
           text-align: center; }
@@ -2564,8 +2654,11 @@ p,
               height: 2px;
               background-color: transparent;
               display: inline-block;
-              position: relative;
-              top: 1.4rem; }
+              position: absolute; }
+              @media only screen and (max-width: 37.5em) {
+                .navigation2__navBar__menu__login__btn__close--active {
+                  top: 1rem;
+                  left: -5rem; } }
               .navigation2__navBar__menu__login__btn__close--active::before {
                 content: "";
                 width: 3rem;
@@ -2635,7 +2728,7 @@ p,
           height: 100vh; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__tint2 {
-            z-index: 200;
+            z-index: 90;
             top: 0; } }
       .navigation2__navBar__menu__background2 {
         width: 100%;
@@ -2647,15 +2740,93 @@ p,
         height: 0;
         z-index: 90;
         transition: all .4s; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation2__navBar__menu__background2 {
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            width: 0;
+            overflow: hidden; } }
         .navigation2__navBar__menu__background2--active {
           top: 0;
           height: 55rem; }
+          @media only screen and (max-width: 37.5em) {
+            .navigation2__navBar__menu__background2--active {
+              position: absolute;
+              height: 100vh;
+              width: 80%; } }
+    .navigation2__navBar__login-menu {
+      height: 0;
+      transition: all 2s;
+      position: relative; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation2__navBar__login-menu {
+          height: 100%; } }
+      .navigation2__navBar__login-menu--active {
+        height: 100%; }
+      .navigation2__navBar__login-menu__stores {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6rem;
+        flex-wrap: wrap; }
+        .navigation2__navBar__login-menu__stores__btn {
+          margin-right: 2rem; }
+      .navigation2__navBar__login-menu__content {
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
         @media only screen and (max-width: 37.5em) {
-          .navigation2__navBar__menu__background2 {
-            min-height: 100vh;
-            top: -12.5rem;
-            width: 0;
-            z-index: 200; } }
+          .navigation2__navBar__login-menu__content {
+            width: 90%;
+            position: absolute;
+            top: 30rem;
+            margin: 0 auto; } }
+      .navigation2__navBar__login-menu__content--flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; }
+        .navigation2__navBar__login-menu__content--flex__1, .navigation2__navBar__login-menu__content--flex__3 {
+          width: 40%; }
+        .navigation2__navBar__login-menu__content--flex__2 {
+          width: 10%; }
+        .navigation2__navBar__login-menu__content--flex__4 {
+          position: relative;
+          top: 5rem; }
+        @media only screen and (max-width: 37.5em) {
+          .navigation2__navBar__login-menu__content--flex {
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            top: 5rem; }
+            .navigation2__navBar__login-menu__content--flex__1, .navigation2__navBar__login-menu__content--flex__2, .navigation2__navBar__login-menu__content--flex__3 {
+              width: 100%; } }
+      .navigation2__navBar__login-menu__form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .navigation2__navBar__login-menu__form-content--heading-align {
+          text-align: left; }
+        .navigation2__navBar__login-menu__form-content--button-align {
+          position: relative;
+          left: 0;
+          transform: translate(0, 0);
+          width: 90%; }
+        .navigation2__navBar__login-menu__form-content--height {
+          min-height: 20rem;
+          justify-content: flex-end; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation2__navBar__login-menu {
+          min-height: 90rem; }
+          .navigation2__navBar__login-menu__form-content {
+            justify-content: center; }
+            .navigation2__navBar__login-menu__form-content--heading-align {
+              text-align: left; }
+            .navigation2__navBar__login-menu__form-content--button-align {
+              position: relative; }
+            .navigation2__navBar__login-menu__form-content--button-align:hover {
+              position: relative; } }
   .navigation2__mega-menu {
     height: 100%;
     position: relative;
@@ -4013,8 +4184,8 @@ p,
   @media only screen and (max-width: 37.5em) {
     .construction__slide1 {
       background-image: url(../../img/base/construction.svg);
-      background-position: center bottom;
-      background-size: 50%;
+      background-position: 30rem 20rem;
+      background-size: 70%;
       background-repeat: no-repeat; } }
 
 .forex__landing__slide1 {

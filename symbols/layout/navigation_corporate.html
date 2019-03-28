@@ -10,7 +10,7 @@
         <ul class="navigation__segments__list2">    
             <li class="navigation__segments__item"><a href="#" class="navigation__segments__link">About us</a></li>
             <li class="navigation__segments__item"><a href="#" class="navigation__segments__link">Contact us</a></li>
-            <li class="navigation__segments__item"><a href="#" class="navigation__segments__link hide">Country</a><span class="hide navigation__segments__flag"></span></li>
+            <li class="navigation__segments__item"><a href="#" class="navigation__segments__link">Country</a><span class=" navigation__segments__flag"></span></li>
         </ul>   
     </div>
 </div>
@@ -72,7 +72,7 @@
     <!-- PH MENU -->
     <div class="navigation__mega-menu-phone" id="megaMenuPhone">
         <div class="nav__phone">
-            <div class="navigation__mega-menu-phone__phone__segment">Personal</div>    
+            <div class="navigation__mega-menu-phone__phone__segment">Corporate</div>    
             <div class="navigation__mega-menu-phone__phone__menu"></div>     
         </div>
         <!-- Products -->
@@ -93,31 +93,39 @@
 </div> 
 
 <!-- Login Menu -->
-<div class="navigation__menu__tint2" id="tint"></div> 
+<div class="navigation__menu__tint2" id="tint" onclick="loginBtn()"></div> 
 <div class="navigation__menu__background2" id="Bg">
     <!-- Login MENU -->
-    <div class="navigation__login-menu" id="login-menu">   
-        <div class="slide__content">
-            <div class="row row__height13 home__slide6__content--flex">
-                <div class="home__slide6__content--flex__1">
-                    <div class="home__slide6__form-content row__height13">
-                        <span class="heading heading--3 home__slide6__form-content--heading-align">Bank on the move</span>
-                        <span class="heading heading--4 home__slide6__form-content--heading-align">Get the FNB banking app & take your banking to the next level.</span>
+    <div class="navigation__login-menu" id="login-menu">
+        <div class="navigation__login-menu__bars show">
+            <div class="navigation__login-menu__bars--top"></div>
+            <div class="navigation__login-menu__bars--bot">
+                <div class="navigation__menu__nav__login" onclick="loginBtn()">
+                    <a href="#" class="navigation__menu__nav__login__btn__close " ></a>
+                </div>
+            </div>
+        </div>  
+        <div class="navigation__login-menu__content">
+            <div class="row row__height13 navigation__login-menu__content--flex ">
+                <div class="navigation__login-menu__content--flex__1 hide">
+                    <div class="navigation__login-menu__form-content row__height13">
+                        <span class="heading heading--3 navigation__login-menu__form-content--heading-align">Bank on the move</span>
+                        <span class="heading heading--4 navigation__login-menu__form-content--heading-align">Get the FNB banking app & take your banking to the next level.</span>
                         <p class="paragraph--tick">Login with your fingerprints</p>
                         <p class="paragraph--tick">Manage your finance with nav» Money</p>
                         <p class="paragraph--tick">Easily buy airtime & electricity</p>
                         <div class="navigation__login-menu__stores">
-                            <a href="" class="btn btn--imageWhite  btn--short btn--shadow navigation__login-menu__stores__btn"><img width="80%" src="img/base/download_white_android.jpg"></a>
-                            <a href="" class="btn btn--imageWhite  btn--short btn--shadow"><img width="80%" src="img/base/download_white_apple.jpg"></a>
+                            <a href="/underConstryction1.html" class="btn btn--imageWhite  btn--short btn--shadow navigation__login-menu__stores__btn"><img width="80%" src="img/base/download_white_android.jpg"></a>
+                            <a href="/underConstryction1.html" class="btn btn--imageWhite  btn--short btn--shadow"><img width="80%" src="img/base/download_white_apple.jpg"></a>
                         </div>
                     </div>
                 </div>
-                <div class="home__slide6__content--flex__2 hide">
+                <div class="navigation__login-menu__content--flex__2 hide">
                     <div class="row__height13 line--vertical">&nbsp;</div>
                 </div>
-                <div class="home__slide6__content--flex__3">
-                    <div class="home__slide6__form-content row__height13">
-                        <span class="heading heading--3 home__slide6__form-content--heading-align">Login to banking</span>
+                <div class="navigation__login-menu__content--flex__3">
+                    <div class="navigation__login-menu__form-content row__height13">
+                        <span class="heading heading--3 navigation__login-menu__form-content--heading-align">Login to banking</span>
                         <form class="">
                             <div class="form">
                                 <input type="text" required>
@@ -132,10 +140,17 @@
                                 <label>Password</label>
                             </div>
                         </form>
-                        <div><a class="btn btn--amber btn--shadow home__slide6__form-content--button-align" href="">Login </a></div>
-                        <div><a class="btn btn--white btn--shadow home__slide6__form-content--button-align" href="">Register </a></div>
-                        <a class="textBtn" href="">Forgot Password </a>    
+                        <div><a class="btn btn--amber btn--short btn--shadow navigation__login-menu__form-content--button-align" href="/underConstryction1.html">Login </a></div>
+                        <div><a class="btn btn--white btn--short btn--shadow navigation__login-menu__form-content--button-align" href="/underConstryction1.html">Register </a></div>
+                        <a class="textBtn" href="/underConstryction1.html">Forgot Password </a>    
                     </div>
+                </div>
+                
+                <div class="navigation__login-menu__stores show">
+                    <p class="paragraph">Download the app</p>
+                    <a href="/underConstryction1.html" class="btn btn--short btn--imageWhite btn--shadow ">
+                        <img width="60%" src="img/base/download_white_apple.jpg">
+                    </a>
                 </div>
             </div>
         </div>    

@@ -190,6 +190,7 @@ function segmentTriger(args) {
 function menuTrigerMobile() {
       
   if (menuBtn === false) {
+    $(".navigation2__navBar__menu__login__btn").addClass(" navigation2__navBar__menu__login__btn--in-active");
     $('.navigation2__navBar').addClass('navigation2__navBar--active');
     $(".navigation2__navBar__menu__icon").addClass(" navigation2__navBar__menu__icon--active");
     $(".navigation2__navBar__menu__label1").addClass(" navigation2__navBar__menu__label1--inActive");
@@ -213,6 +214,7 @@ function menuTrigerMobile() {
     menuBtn = true;
 
   }  else {
+    $(".navigation2__navBar__menu__login__btn").removeClass(" navigation2__navBar__menu__login__btn--in-active");
     $('.navigation2__navBar').removeClass('navigation2__navBar--active');
     $(".navigation2__navBar__menu__icon").removeClass(" navigation2__navBar__menu__icon--active");
     $(".navigation2__navBar__menu__label1").removeClass(" navigation2__navBar__menu__label1--inActive");
@@ -373,7 +375,9 @@ $(function(){
  function loginBtn() {
   
   if (loginState === false) {
-
+    $('.navigation2__navBar').addClass('navigation2__navBar--active');
+    $('.navigation2__navBar__menu__icon').addClass('navigation2__navBar__menu__icon--hide');
+    $('.navigation2__navBar__menu__group').addClass('navigation2__navBar__menu__group--hide');
     $("#login-menu").addClass(" navigation2__navBar__login-menu--active");
     $("#tint").addClass(" navigation2__navBar__menu__tint2--active");
     $("#Bg").addClass(" navigation2__navBar__menu__background2--active");
@@ -383,7 +387,9 @@ $(function(){
     loginState = true;
     
   } else {
-    
+    $('.navigation2__navBar').removeClass('navigation2__navBar--active');
+    $('.navigation2__navBar__menu__icon').removeClass('navigation2__navBar__menu__icon--hide');
+    $('.navigation2__navBar__menu__group').removeClass('navigation2__navBar__menu__group--hide');
     $("#login-menu").removeClass(" navigation2__navBar__login-menu--active");
     $("#tint").removeClass(" navigation2__navBar__menu__tint2--active");
     $("#Bg").removeClass(" navigation2__navBar__menu__background2--active");

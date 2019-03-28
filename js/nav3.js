@@ -3,14 +3,14 @@ var header = document.getElementById("megaMenu");
 var btns = header.getElementsByClassName("navigation3__mega-menu__content__bar__header");
 var btnsSeg = header.getElementsByClassName("navigation3__mega-menu__segments__bar__segment__btn");
 var contSeg = header.getElementsByClassName("navigation3__mega-menu__content__bar");
-
+var loginState = false;
 
 // Menu Button
 function menuTriger() {
       
   if (menuBtn === false) {
     $('.navigation3__navBar').addClass('navigation3__navBar--black');
-    $('.navigation3__navBar__menu__icon').addClass('navigation3__navBar__menu__icon--black');
+    $('.navigation3__navBar__menu__icon').addClass('navigation3__navBar__menu__icon--active');
     $('.navigation3__navBar__menu__label1').addClass('navigation3__navBar__menu__label1--black');
     $('.navigation3__navBar__menu__label2').addClass('navigation3__navBar__menu__label2--black');
     $('.navigation3__navBar__menu__search__input').addClass('navigation3__navBar__menu__search__input--black');
@@ -40,7 +40,7 @@ function menuTriger() {
 
   }  else {
     $(".navigation3__navBar").removeClass("navigation3__navBar--black");
-    $(".navigation3__navBar__menu__icon").removeClass("navigation3__navBar__menu__icon--black");
+    $(".navigation3__navBar__menu__icon").removeClass("navigation3__navBar__menu__icon--active");
     $(".navigation3__navBar__menu__label1").removeClass("navigation3__navBar__menu__label1--black");
     $(".navigation3__navBar__menu__label2").removeClass("navigation3__navBar__menu__label2--black");
     $(".navigation3__navBar__menu__search__input").removeClass("navigation3__navBar__menu__search__input--black");
@@ -83,7 +83,7 @@ for (var i = 0; i < btns.length; i++) {
     current.next().removeClass("navigation3__mega-menu__content__bar__links--in-active").addClass(" navigation3__mega-menu__content__bar__links--active"); 
     $("#backBtnMobile").addClass(" navigation3__mega-menu__back--active");
   });
-}
+};
 
 // Segment Menu
 function segmentTriger(args) {
@@ -186,7 +186,6 @@ function segmentTriger(args) {
 
 };
 
-
 // Mobile Menu Button
 function menuTrigerMobile() {
       
@@ -201,8 +200,15 @@ function menuTrigerMobile() {
     
     $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--active");
     $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--in-active");
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--in-active");
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--in-active");
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--in-active");
+   
     $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
     $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
 
     menuBtn = true;
 
@@ -236,28 +242,88 @@ function segmentTrigerMobile(args) {
     
     $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
     $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
-
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    
     $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--active").removeClass(" navigation3__mega-menu__content__bar--in-active");
     $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active");
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active");
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active");
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active");
     
     $(".navigation3__mega-menu__content__bar__header").removeClass(" navigation3__mega-menu__content__bar__header--active");
     $(".navigation3__mega-menu__content__bar__links").removeClass(" navigation3__mega-menu__content__bar__links--active");
 
-    
-
-  }  else {
+  }  else if (args === 'myBusiness') {
 
     $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
     $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
     
     $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--active").removeClass(" navigation3__mega-menu__content__bar--in-active"); 
     $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
     
     $(".navigation3__mega-menu__content__bar__header").removeClass(" navigation3__mega-menu__content__bar__header--active");
     $(".navigation3__mega-menu__content__bar__links").removeClass(" navigation3__mega-menu__content__bar__links--active");
+     
+  } else if (args === 'myFamily') {
+
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
     
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--active").removeClass(" navigation3__mega-menu__content__bar--in-active"); 
+    $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
     
-  } 
+    $(".navigation3__mega-menu__content__bar__header").removeClass(" navigation3__mega-menu__content__bar__header--active");
+    $(".navigation3__mega-menu__content__bar__links").removeClass(" navigation3__mega-menu__content__bar__links--active");
+     
+  } else if (args === 'myPrivateBanking') {
+
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--active").removeClass(" navigation3__mega-menu__content__bar--in-active"); 
+    $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    
+    $(".navigation3__mega-menu__content__bar__header").removeClass(" navigation3__mega-menu__content__bar__header--active");
+    $(".navigation3__mega-menu__content__bar__links").removeClass(" navigation3__mega-menu__content__bar__links--active");
+     
+  } else {
+
+    $("#segMyCMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active");
+    $("#segMeMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyBMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyFMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    $("#segMyPMobile").addClass(" navigation3__mega-menu__segments__bar__segment__btn--in-active").removeClass(" navigation3__mega-menu__segments__bar__segment__btn--active");
+    
+    $("#forMyCorporateMenu").addClass(" navigation3__mega-menu__content__bar--active").removeClass(" navigation3__mega-menu__content__bar--in-active"); 
+    $("#forMeMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyBusinessMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyFamilyMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    $("#forMyPrivateMenu").addClass(" navigation3__mega-menu__content__bar--in-active").removeClass(" navigation3__mega-menu__content__bar--active"); 
+    
+    $(".navigation3__mega-menu__content__bar__header").removeClass(" navigation3__mega-menu__content__bar__header--active");
+    $(".navigation3__mega-menu__content__bar__links").removeClass(" navigation3__mega-menu__content__bar__links--active");
+     
+  }
 
 };
 
@@ -268,7 +334,6 @@ function backBtnMobile() {
   $(".navigation3__mega-menu__content__bar__links").addClass(" navigation3__mega-menu__content__bar__links--in-active").removeClass(" navigation3__mega-menu__content__bar__links--active");
   $("#backBtnMobile").removeClass(" navigation3__mega-menu__back--active");
 };
-
 
 // Header White transitions
 $(function(){
@@ -304,6 +369,35 @@ $(function(){
      }
  });
 
+ // Login Menu
+ function loginBtn() {
+  
+  if (loginState === false) {
+   
+    $('.navigation3__navBar').addClass('navigation3__navBar--login');
+    $('.navigation3__navBar__menu__group').addClass('navigation3__navBar__menu__group--black');
+    $("#login-menu").addClass(" navigation3__navBar__login-menu--active");
+    $("#tint").addClass(" navigation3__navBar__menu__tint2--active");
+    $("#Bg").addClass(" navigation3__navBar__menu__background2--active");
+    $(".navigation3__navBar__menu__login__btn").addClass(" navigation3__navBar__menu__login__btn--in-active");
+    $(".navigation3__navBar__menu__login__btn__close").addClass(" navigation3__navBar__menu__login__btn__close--active");
+    $(".navigation3__navBar__menu__search").addClass(" navigation3__navBar__menu__search--in-active");
+    loginState = true;
+    
+  } else {
+    
+    $('.navigation3__navBar').removeClass('navigation3__navBar--login');
+    $('.navigation3__navBar__menu__group').removeClass('navigation3__navBar__menu__group--black');
+    $("#login-menu").removeClass(" navigation3__navBar__login-menu--active");
+    $("#tint").removeClass(" navigation3__navBar__menu__tint2--active");
+    $("#Bg").removeClass(" navigation3__navBar__menu__background2--active");
+    $(".navigation3__navBar__menu__login__btn").removeClass(" navigation3__navBar__menu__login__btn--in-active");
+    $(".navigation3__navBar__menu__login__btn__close").removeClass(" navigation3__navBar__menu__login__btn__close--active");
+    $(".navigation3__navBar__menu__search").removeClass(" navigation3__navBar__menu__search--in-active");
+    loginState = false;
 
+  }
+  
+};
     
  
