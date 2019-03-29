@@ -91,7 +91,7 @@ body {
 
 main {
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: block; }
 
@@ -1541,14 +1541,14 @@ p,
     width: 100%;
     top: 0;
     z-index: 200;
-    overflow-y: scroll;
-    /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
     transition: all .2s; }
     @media only screen and (max-width: 37.5em) {
       .navigation__segments {
         height: 5rem;
-        overflow: auto; } }
+        overflow: auto;
+        overflow-y: scroll;
+        /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch; } }
     .navigation__segments__nav {
       position: relative;
       width: 80%;
@@ -1933,7 +1933,11 @@ p,
           min-height: 100vh;
           top: -12.5rem;
           width: 0;
-          z-index: 200; } }
+          z-index: 200;
+          overflow: auto;
+          overflow-x: scroll;
+          /* has to be scroll, not auto */
+          -webkit-overflow-scrolling: touch; } }
     .navigation__menu__tint2 {
       position: absolute;
       width: 100vw;
@@ -2406,8 +2410,7 @@ p,
           width: 90%; } }
       @media only screen and (max-width: 37.5em) {
         .navigation2__navBar__menu {
-          width: calc(100% - 3.75rem);
-          flex-direction: row-reverse; } }
+          width: calc(100% - 3.75rem); } }
       .navigation2__navBar__menu__logo {
         position: relative;
         width: 6.5rem;
@@ -2426,7 +2429,7 @@ p,
         cursor: pointer; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__button {
-            margin-right: 0;
+            margin-right: auto;
             width: auto; } }
       .navigation2__navBar__menu__button:hover .navigation2__navBar__menu__icon::before {
         top: -1rem; }
@@ -2612,8 +2615,6 @@ p,
           top: 0; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__login {
-            position: absolute;
-            left: 6rem;
             top: auto; } }
         .navigation2__navBar__menu__login__btn {
           overflow: hidden;
@@ -2657,7 +2658,7 @@ p,
               position: absolute; }
               @media only screen and (max-width: 37.5em) {
                 .navigation2__navBar__menu__login__btn__close--active {
-                  top: 1rem;
+                  top: 2rem;
                   left: -5rem; } }
               .navigation2__navBar__menu__login__btn__close--active::before {
                 content: "";
@@ -2714,7 +2715,9 @@ p,
               width: 80%;
               z-index: 200;
               top: -7.5rem;
+              overflow: auto;
               overflow-y: scroll;
+              /* has to be scroll, not auto */
               -webkit-overflow-scrolling: touch; } }
       .navigation2__navBar__menu__tint2 {
         position: absolute;
