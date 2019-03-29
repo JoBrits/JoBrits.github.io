@@ -2615,6 +2615,8 @@ p,
         top: 2rem; }
         .navigation2__navBar__menu__login--black {
           top: 0; }
+        .navigation2__navBar__menu__login--inActive {
+          display: none; }
         @media only screen and (max-width: 37.5em) {
           .navigation2__navBar__menu__login {
             top: auto; } }
