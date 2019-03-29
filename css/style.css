@@ -944,7 +944,8 @@ p,
     width: 80%;
     position: relative;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    top: 10rem; }
     @media only screen and (max-width: 75em) {
       .footer__content {
         width: 80%;
@@ -969,8 +970,7 @@ p,
         transform: translate(-50%, -50%); } }
     @media only screen and (min-width: 112.5em) {
       .footer__content {
-        width: 80%;
-        top: 10rem; } }
+        width: 80%; } }
   .footer__nav {
     list-style: none;
     text-align: left; }
