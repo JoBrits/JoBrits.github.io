@@ -1617,7 +1617,8 @@ p,
       .navigation__segments__link__active {
         color: #fff !important; }
   .navigation__segments.shrink {
-    height: 0; }
+    height: 0;
+    overflow: hidden; }
   .navigation__menu {
     position: relative;
     height: 7.5rem;
