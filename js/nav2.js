@@ -15,8 +15,8 @@ function menuTriger() {
     $('.navigation2__navBar__menu__label2').addClass('navigation2__navBar__menu__label2--black');
     $('.navigation2__navBar__menu__search__input').addClass('navigation2__navBar__menu__search__input--black');
     $('.navigation2__navBar__menu__group').addClass('navigation2__navBar__menu__group--black');
-    $('.navigation2__navBar__menu__search').addClass('navigation2__navBar__menu__search--black');
-    $('.navigation2__navBar__menu__login').addClass('navigation2__navBar__menu__login--black');
+    $('.navigation2__navBar__menu__search').addClass('navigation2__navBar__menu__search--in-active');
+    $('.navigation2__navBar__menu__login').addClass('navigation2__navBar__menu__login--inActive');
     $('.navigation2__navBar__menu__search__bg').addClass('navigation2__navBar__menu__search__bg--black');
     
     $(".navigation2__navBar__menu__tint").addClass(" navigation2__navBar__menu__tint--active");
@@ -45,8 +45,8 @@ function menuTriger() {
     $(".navigation2__navBar__menu__label2").removeClass("navigation2__navBar__menu__label2--black");
     $(".navigation2__navBar__menu__search__input").removeClass("navigation2__navBar__menu__search__input--black");
     $(".navigation2__navBar__menu__group").removeClass("navigation2__navBar__menu__group--black");
-    $(".navigation2__navBar__menu__search").removeClass("navigation2__navBar__menu__search--black");
-    $(".navigation2__navBar__menu__login").removeClass("navigation2__navBar__menu__login--black");
+    $(".navigation2__navBar__menu__search").removeClass("navigation2__navBar__menu__search--in-active");
+    $(".navigation2__navBar__menu__login").removeClass("navigation2__navBar__menu__login--inActive");
     $(".navigation2__navBar__menu__search__bg").removeClass("navigation2__navBar__menu__search__bg--black");   
     
     $(".navigation2__navBar__menu__tint").removeClass(" navigation2__navBar__menu__tint--active");
@@ -377,6 +377,7 @@ $(function(){
   if (loginState === false) {
     $('.navigation2__navBar').addClass('navigation2__navBar--active');
     $('.navigation2__navBar__menu__icon').addClass('navigation2__navBar__menu__icon--hide');
+    $('.navigation2__navBar__menu__label1').addClass('navigation2__navBar__menu__label1--inActive');
     $('.navigation2__navBar__menu__group').addClass('navigation2__navBar__menu__group--hide');
     $("#login-menu").addClass(" navigation2__navBar__login-menu--active");
     $("#tint").addClass(" navigation2__navBar__menu__tint2--active");
@@ -389,6 +390,7 @@ $(function(){
   } else {
     $('.navigation2__navBar').removeClass('navigation2__navBar--active');
     $('.navigation2__navBar__menu__icon').removeClass('navigation2__navBar__menu__icon--hide');
+    $('.navigation2__navBar__menu__label1').removeClass('navigation2__navBar__menu__label1--inActive');
     $('.navigation2__navBar__menu__group').removeClass('navigation2__navBar__menu__group--hide');
     $("#login-menu").removeClass(" navigation2__navBar__login-menu--active");
     $("#tint").removeClass(" navigation2__navBar__menu__tint2--active");
