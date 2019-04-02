@@ -3,6 +3,7 @@ var header = document.getElementById("megaMenu");
 var btns = header.getElementsByClassName("navigation__mega-menu__btn");
 var searchState = false;
 var loginState = false;
+var menuBtn = false;
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -12,8 +13,26 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-//Add active class to the current button (PH)
+// Menu Button
+function menuTriger() {
+      
+  if (menuBtn === false) {
+    $('.navigation__mega-menu__btn').removeClass(' navigation__mega-menu__active');
+    $('#first').addClass(' navigation__mega-menu__active');
+    
 
+    menuBtn = true;
+
+  }  else {
+    
+    
+
+    menuBtn = false;
+  } 
+
+};
+
+//Add active class to the current button (PH)
 var header = document.getElementById("megaMenuPhone");
 var btns = header.getElementsByClassName("navigation__mega-menu-phone__header");
 var btnsSub = header.getElementsByClassName("navigation__mega-menu-phone__content__links__sub-header");
@@ -53,7 +72,6 @@ function backBtn() {
   
 };
 
-
 function loginBtn() {
   
   if (loginState === false) {
@@ -81,7 +99,6 @@ function loginBtn() {
   }
   
 };
-
 
 // Header Shrink
 $(function(){
