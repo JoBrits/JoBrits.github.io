@@ -1,8 +1,4 @@
-// alert("side-menu-ds");
-
 var menuBtn = false;
-var header = document.getElementById("ds__main__nav");
-var btns = header.getElementsByClassName("ds__main__nav__links__main-section__heading");
 
 // Menu Button
 function menuTriger() {
@@ -11,7 +7,7 @@ function menuTriger() {
     $('.ds__main__nav__menu__icon').addClass(' ds__main__nav__menu__icon--active');
     $('.ds__main__nav__links').addClass(' ds__main__nav__links--active');
     $('.ds__main__content').addClass(' ds__main__content--menuOpen');
-    menuBtn = true;
+	menuBtn = true;
 
   }  else {
     $('.ds__main__nav__menu__icon').removeClass(' ds__main__nav__menu__icon--active');
@@ -20,13 +16,4 @@ function menuTriger() {
     menuBtn = false;
   } 
 
-};
-
-// Nave Menu
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    current = $(this);
-    $(".ds__main__nav__links__main-section__heading").removeClass(" ds__main__nav__links__main-section__heading--active");
-    current.addClass(" ds__main__nav__links__main-section__heading--active"); 
-  });
 };
