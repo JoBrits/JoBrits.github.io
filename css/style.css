@@ -144,6 +144,9 @@ p,
   p--grey,
   .paragraph--grey {
     color: #9B9B9B; }
+  p--grey-secondary,
+  .paragraph--grey-secondary {
+    color: #333333; }
   p--grey-tertiary,
   .paragraph--grey-tertiary {
     color: #D8D8D8; }
@@ -175,6 +178,17 @@ p,
     background-position: 0 .5rem;
     padding-left: 2rem;
     margin-bottom: 0rem !important; }
+  p--tick-white,
+  .paragraph--tick-white {
+    position: relative;
+    font-size: 1.6rem;
+    color: #fff;
+    background-image: url(../../img/base/chevron-thin-right-white.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 0 .5rem;
+    padding-left: 2rem;
+    margin-bottom: 0rem !important; }
 
 .heading {
   position: relative;
@@ -185,6 +199,10 @@ p,
     color: #fff; }
   .heading--turq {
     color: #01aaad; }
+  .heading--ambGradient {
+    background-image: linear-gradient(160deg, #FA9D1E, #D25B73);
+    -webkit-background-clip: text;
+    color: transparent; }
   .heading--0 {
     font-family: "FNBSansThin", sans-serif;
     font-size: 20rem;
@@ -453,6 +471,17 @@ p,
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
         width: 90%;
         left: 5%; }
+  .btn--ambGradient {
+    background-image: linear-gradient(160deg, #FA9D1E, #D25B73);
+    color: #fff;
+    padding: 1rem 4rem;
+    display: inline-block; }
+    .btn--ambGradient::after {
+      background-image: linear-gradient(160deg, #FA9D1E, #D25B73);
+      transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .btn--ambGradient {
+        padding: 1rem 2rem; } }
   .btn--amber {
     background-color: #FA9D1E;
     color: #fff;
@@ -641,7 +670,7 @@ p,
     background-image: url(../../img/SVG/chevron-thin-left.svg);
     background-repeat: no-repeat;
     background-size: 1rem;
-    background-position: 0 .5rem;
+    background-position: 0 0;
     height: 4rem;
     padding: 0 2rem;
     border: none;
@@ -661,7 +690,7 @@ p,
     font-size: 1.6rem;
     color: #000; }
   .cookie-btn:hover {
-    background-position: 5px .5rem;
+    background-position: 5px 0;
     color: #000; }
     @media only screen and (max-width: 37.5em) {
       .cookie-btn:hover {
@@ -773,6 +802,38 @@ p,
     @media only screen and (max-width: 37.5em) {
       .card__half--up_half {
         transform: translate(-50%, 0%); } }
+
+.flip-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  width: 100%; }
+  .flip-card__side {
+    position: absolute;
+    padding: 2.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
+    .flip-card__side--front {
+      background-color: #fff; }
+    .flip-card__side--back {
+      transform: rotateY(180deg); }
+      .flip-card__side--back-1 {
+        background-image: linear-gradient(160deg, #FA9D1E, #D25B73); }
+      .flip-card__side--back-2 {
+        background-image: linear-gradient(160deg, #01aaad, #00676D); }
+      .flip-card__side--back-3 {
+        background-image: linear-gradient(160deg, #eef1f4, #fff); }
+  .flip-card:hover .flip-card__side--front {
+    transform: rotateY(-180deg); }
+  .flip-card:hover .flip-card__side--back {
+    transform: rotateY(0); }
 
 .converter__header {
   width: 100%;
@@ -5654,7 +5715,7 @@ p,
 
 .ds__main {
   height: 100%;
-  background: #999999; }
+  background: #eef1f4; }
   .ds__main__cookies {
     position: absolute;
     top: 1rem; }
@@ -5677,7 +5738,7 @@ p,
       .ds__main__nav__menu__icon, .ds__main__nav__menu__icon::before, .ds__main__nav__menu__icon::after {
         width: 3rem;
         height: 2px;
-        background-color: #fff;
+        background-image: linear-gradient(160deg, #FA9D1E, #D25B73);
         display: inline-block; }
       .ds__main__nav__menu__icon::before, .ds__main__nav__menu__icon::after {
         content: "";
@@ -5691,7 +5752,8 @@ p,
       .ds__main__nav__menu__icon--black, .ds__main__nav__menu__icon--black::before, .ds__main__nav__menu__icon--black::after {
         background-color: #000; }
       .ds__main__nav__menu__icon--active {
-        background-color: transparent; }
+        background-color: transparent;
+        background-image: none; }
         .ds__main__nav__menu__icon--active::before {
           top: 0;
           background-color: #fff;
@@ -5710,7 +5772,8 @@ p,
       position: fixed;
       overflow: hidden;
       transition: all .4s;
-      background-color: #AAAAAA; }
+      background-color: #fff;
+      box-shadow: inset -4px 0px 10px rgba(0, 0, 0, 0.3); }
       .ds__main__nav__links--active {
         width: 20%;
         overflow: auto; }
@@ -5721,20 +5784,34 @@ p,
         top: 4rem;
         min-width: max-content; }
         .ds__main__nav__links__main-section__heading {
+          position: relative;
           font-family: "FNBSansLight", sans-serif;
           font-size: 2rem;
           position: relative;
-          color: #fff;
-          min-height: 4rem;
-          display: block;
+          color: #333333;
           padding: 2rem;
-          transition: all .4s; }
-          .ds__main__nav__links__main-section__heading:visited {
+          display: block; }
+          .ds__main__nav__links__main-section__heading--active {
             color: #fff; }
-          .ds__main__nav__links__main-section__heading:hover {
-            background-color: #9c9c9c; }
-          .ds__main__nav__links__main-section__heading:active, .ds__main__nav__links__main-section__heading:focus {
-            color: #fff; }
+          .ds__main__nav__links__main-section__heading--link {
+            position: relative; }
+        .ds__main__nav__links__main-section__heading::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 3px;
+          color: #000;
+          background-image: linear-gradient(160deg, #FA9D1E, #D25B73);
+          transform: scaleY(0);
+          transform-origin: bottom;
+          transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-image 0.1s; }
+        .ds__main__nav__links__main-section__heading:hover::before, .ds__main__nav__links__main-section__heading--active::before {
+          transform: scaleY(1);
+          width: 100%; }
+        .ds__main__nav__links__main-section__heading:active::before {
+          background-image: linear-gradient(160deg, #FA9D1E, #D25B73); }
       .ds__main__nav__links__sub-section {
         font-size: 1.3rem;
         padding: 2rem;
