@@ -1,0 +1,216 @@
+// Colours
+$color-turq-primary: #01aaad; 
+$color-turq-primary-70: #4CB7B7; 
+$color-turq-primary-50: #7FCCCC; 
+$color-turq-primary-30: #B2E0E0; 
+$color-turq-secondary: #00676D;   
+$color-turq-tertiary: #004C54;    
+  
+$color-amber-primary: #FA9D1E; 
+$color-amber-secondary: #F47920;        
+$color-amber-tertiary: #ffcc00; 
+
+$color-other-red: #DA291C; 
+$color-other-green: #84BD00; 
+$color-other-purple: #653165; 
+$color-other-pink: #D25B73; 
+$color-other-blue: #7DA1C4; 
+$color-other-lightBlue: #eef1f4; 
+     
+$color-amber-80: rgba($color-amber-primary, .8); 
+$color-amber-50: rgba($color-amber-primary, .5);  
+$color-amber-20: rgba($color-amber-primary, .2);     
+  
+$color-black: #000; 
+$color-black-80: rgba($color-black, .8);      
+$color-black-60: rgba($color-black, .6);      
+$color-black-50: rgba($color-black, .5);      
+$color-black-40: rgba($color-black, .4);      
+$color-black-20: rgba($color-black, .2);        
+$color-black-10: rgba($color-black, .1);        
+
+$color-white: #fff;       
+$color-white-80: rgba($color-white, .8);    
+$color-white-60: rgba($color-white, .6); 
+$color-white-40: rgba($color-white, .4); 
+$color-white-20: rgba($color-white, .2);       
+$color-white-10: rgba($color-white, .1);       
+  
+$color-grey-primary: #696969;   
+$color-grey-secondary: #333333;      
+$color-grey-tertiary: #D8D8D8; 
+
+$color-grey-dark: #6b6b6b; 
+$color-grey-medium: #9b9b9b; 
+$color-grey-light: #dadada; 
+  
+$color-graph-red-1: #da291c;   
+$color-graph-red-7: #e97f77;      
+$color-graph-red-13: #f0a9a4; 
+$color-graph-red-19: #f3beba; 
+
+$color-graph-yellow-2: #ffcc00;   
+$color-graph-yellow-8: #ffe049;      
+$color-graph-yellow-14: #ffec8c; 
+$color-graph-yellow-20: #ffefaa; 
+
+$color-graph-pink-3: #d25b73;   
+$color-graph-pink-9: #f099ab;      
+$color-graph-pink-15: #f6bac7; 
+$color-graph-pink-21: #f8cbd5; 
+
+$color-graph-green-4: #84bd00;   
+$color-graph-green-10: #abda51;      
+$color-graph-green-16: #c8e78f; 
+$color-graph-green-22: #d5edab; 
+
+$color-graph-purple-5: #653165;   
+$color-graph-purple-11: #a981a5;      
+$color-graph-purple-17: #c5acc2; 
+$color-graph-purple-23: #d3c0d1; 
+
+$color-graph-blue-6: #7da1c4;   
+$color-graph-blue-12: #acc7de;      
+$color-graph-blue-18: #c8d9e9; 
+$color-graph-blue-24: #d6e2ee; 
+
+$color-amber-gradient :linear-gradient( 160deg, $color-amber-primary, $color-other-pink);
+$color-turq-gradient :linear-gradient( 160deg, $color-turq-primary, $color-turq-secondary);
+$color-white-gradient :linear-gradient( 160deg, $color-grey-tertiary, $color-white);
+
+     
+//shaddows    
+$shadow-30: 0px 5px 5px rgba($color-black, 0.3);     
+$shadow-50: 0px 10px 10px rgba($color-black, 0.5);         
+$shadow-50-around: 0px 0px 10px rgba($color-black, 0.3);         
+$shadow-50-behind: 5px 5px 20px rgba($color-black, 0.2);         
+ 
+$phone-paragraph: 4rem;  
+// $phone-subtext: 3rem; 
+ 
+//fonts sizes - Headings/Paragraph/Subtext - Base  
+$heading-font-0: 20rem;  
+$heading-font-1: 10rem;  
+$heading-font-2: 5rem;    
+$heading-font-3: 3.5rem; 
+$heading-font-4: 2rem;  
+$default-font-size: 1.6rem;
+$small-font-size:1.3rem;
+$tiny-font-size:1.2rem;
+ 
+//fonts sizes - Headings/Paragraph/Subtext - Phone
+$heading-font-1-phone: 10rem; 
+$heading-font-2-phone: 5rem;  
+$heading-font-3-phone: 3.5rem;  
+$heading-font-4-phone: 2rem; 
+$default-font-size-phone: 2rem;
+$small-font-size-phone: 1.75rem;
+$tiny-font-size-phone: 1.625rem; 
+
+// Line heights Base   
+$heading-line-height-0: 20rem; 
+$heading-line-height-1: 10rem; 
+$heading-line-height-2: 5rem; 
+$heading-line-height-3: 3.8rem;  
+$heading-line-height-4: 2.5rem;  
+$default-line-height: 2rem;   
+$small-line-height: 1.3rem;
+
+// Line heights Phone
+$heading-line-height-1-phone: 10rem; 
+$heading-line-height-2-phone: 5rem; 
+$heading-line-height-3-phone: 4rem; 
+$heading-line-height-4-phone: 2.5rem; 
+$default-line-height-phone: 2.5rem;
+$small-line-height-phone: 1.3rem;
+
+ 
+// Content Min-Width
+$content-width-phone: 320px;
+
+// Content Max-Height
+$content-height-phone: 166.8rem;        // 1 row = 10px * 30 rows (04px = 1rem) = 75rem
+$content-height-tab-port: 170rem;       // 1 row = 15px * 30 rows (06px = 1rem) = 75rem
+$content-height-tab-land: 75rem;        // 1 row = 20px * 30 rows (08px = 1rem) = 75rem
+$content-height-pc-n: 75rem;            // 1 row = 25px * 30 rows (10px = 1rem) = 75rem      
+$content-height-pc-l: 75rem;            // 1 row = 30px * 30 rows (12px = 1rem) = 75rem
+
+// Grid - Base
+$grid-row-height-01: 2.5rem;
+$grid-row-height-02: 5rem;
+$grid-row-height-03: 7.5rem;
+$grid-row-height-04: 10rem;
+$grid-row-height-05: 12.5rem;
+$grid-row-height-06: 15rem;
+$grid-row-height-07: 17.5rem;
+$grid-row-height-08: 20rem;
+$grid-row-height-09: 22.5rem;
+$grid-row-height-10: 25rem;
+
+$grid-row-height-11: 27.5rem;
+$grid-row-height-12: 30rem;
+$grid-row-height-13: 32.5rem;
+$grid-row-height-14: 35rem;
+$grid-row-height-15: 37.5rem; 
+$grid-row-height-16: 40rem;
+$grid-row-height-17: 42.5rem;
+$grid-row-height-18: 45rem; 
+$grid-row-height-19: 47.5rem;
+$grid-row-height-20: 50rem; 
+
+$grid-row-height-21: 52.5rem;
+$grid-row-height-22: 55rem;
+$grid-row-height-23: 57.2rem;
+$grid-row-height-24: 60rem;  
+$grid-row-height-25: 62.5rem;    
+$grid-row-height-26: 65rem;
+$grid-row-height-27: 67.5rem;
+$grid-row-height-28: 70rem;  
+$grid-row-height-29: 72.5rem;
+$grid-row-height-30: 75rem; 
+
+// Grid - phone
+$grid-row-height-01-phone: 5rem;
+$grid-row-height-02-phone: 10rem;
+$grid-row-height-03-phone: 15rem;
+$grid-row-height-04-phone: 20rem;
+$grid-row-height-05-phone: 25rem;
+$grid-row-height-06-phone: 30rem;
+$grid-row-height-07-phone: 35em;
+$grid-row-height-08-phone: 40rem;
+$grid-row-height-09-phone: 45rem;
+$grid-row-height-10-phone: 50rem;
+
+$grid-row-height-11-phone: 55rem;
+$grid-row-height-12-phone: 60rem;
+$grid-row-height-13-phone: 65rem;
+$grid-row-height-14-phone: 70rem;
+$grid-row-height-15-phone: 75rem; 
+$grid-row-height-16-phone: 80rem;
+$grid-row-height-17-phone: 85rem;
+$grid-row-height-18-phone: 90rem; 
+$grid-row-height-19-phone: 95rem;
+$grid-row-height-20-phone: 100rem; 
+
+$grid-row-height-21-phone: 105rem;
+$grid-row-height-22-phone: 110rem;
+$grid-row-height-23-phone: 115rem;
+$grid-row-height-24-phone: 120rem;  
+$grid-row-height-25-phone: 125rem;    
+$grid-row-height-26-phone: 130rem;
+$grid-row-height-27-phone: 135rem;
+$grid-row-height-28-phone: 140rem;  
+$grid-row-height-29-phone: 145rem;
+$grid-row-height-30-phone: 150rem; 
+
+//Header - Heights  
+$header-main-height-01: 11.5rem;   
+$header-segment-height-01: 4rem;  
+$header-menu-height-01: 7.5rem; 
+$header-menu-height-02: 0;
+$header-menu-height-03: 50rem;
+ 
+//Gutters - Base   
+$gutter-horizontal: 2.5rem; 
+ 
+//Margins    

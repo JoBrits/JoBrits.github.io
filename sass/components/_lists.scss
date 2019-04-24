@@ -1,0 +1,336 @@
+.list {
+
+    &__text-list {
+
+       
+        
+        width: 100%;
+
+        u, 
+        li {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        
+
+        &__item {
+                color: inherit;
+                fill: inherit;
+                font-size: 1.6rem;
+                background-image: url(../../img/base/dot.svg);
+                background-repeat: no-repeat;
+                background-position: 0px 4px;
+                height: 2rem;
+                padding-left: 2rem;
+                margin-bottom: 0rem;
+                display: block;
+                margin-bottom: 2rem;
+
+                &--white {
+                    color: $color-white!important;
+                    background-image: url(../../img/base/dotw.svg);
+                }
+        }    
+        &__bg {
+                color: inherit;
+                font-size: 1.3rem;
+                display: block;
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
+                
+                &--turq-primary {
+                    background-color: $color-turq-primary;
+                }
+                &--turq-70{
+                    background-color: $color-turq-primary-70;
+                }
+                &--turq-50{
+                    background-color: $color-turq-primary-50;
+                }
+                &--turq-30{
+                    background-color: $color-turq-primary-30;
+                }
+                &--turq-secondary{
+                    background-color: $color-turq-secondary;
+                }
+                &--turq-tertiary{
+                    background-color: $color-turq-tertiary;
+                }
+                
+                &--amber-primary{
+                    background-color:  $color-amber-primary;
+                }
+                &--amber-secondary{
+                    background-color: $color-amber-secondary;
+                }
+                &--amber-tertiary{
+                    background-color: $color-amber-tertiary;
+                }
+
+                &--black{
+                    background-color: $color-black;
+                }
+                &--black-80{
+                    background-color: $color-black-80;
+                }
+                &--black-60{
+                    background-color: $color-black-60;
+                }
+                &--black-40{
+                    background-color: $color-black-40;
+                }
+                &--black-20{
+                    background-color: $color-black-20;
+                }
+                &--black-10{
+                    background-color: $color-black-10;
+                }
+
+                &--white{
+                    background-color: $color-white;
+                }
+                &--white-80{
+                    background-color: $color-white-80;
+                }
+                &--white-60{
+                    background-color: $color-white-60;
+                }
+                &--white-40{
+                    background-color: $color-white-40;
+                }
+                &--white-20{
+                    background-color: $color-white-20; 
+                }
+                &--white-10{
+                    background-color: $color-white-10;
+                }
+                
+                &--other-red{
+                    background-color: $color-other-red;
+                }
+                &--other-green{
+                    background-color: $color-other-green;
+                }
+                &--other-purple{
+                    background-color: $color-other-purple;
+                }
+                &--other-pink{
+                    background-color: $color-other-pink;
+                }
+                &--other-blue{
+                    background-color: $color-other-blue; 
+                }
+ 
+                &--gradient-amber{
+                     background-image:$color-amber-gradient;
+                }
+                &--gradient-turq{
+                     background-image:$color-turq-gradient;
+                }
+                &--gradient-white{
+                     background-image:$color-white-gradient;
+                }
+
+                &--grey-primary{
+                     background-color:$color-grey-primary;
+                }
+                &--grey-secondary{
+                     background-color:$color-grey-secondary;
+                }
+                &--grey-tertiary{
+                     background-color:$color-grey-tertiary;
+                }
+                &--grey-dark{
+                     background-color:$color-grey-dark;
+                }
+                &--grey-medium{
+                     background-color:$color-grey-medium;
+                }
+                &--grey-light{
+                     background-color:$color-grey-light;
+                }
+                
+                &--graph-red-1{
+                     background-color:$color-graph-red-1;
+                }
+                &--graph-red-7{
+                     background-color:$color-graph-red-7;
+                }
+                &--graph-red-13{
+                     background-color:$color-graph-red-13;
+                }
+                &--graph-red-19{
+                     background-color:$color-graph-red-19;
+                }
+
+                &--graph-yellow-2{
+                     background-color:$color-graph-yellow-2;
+                }
+                &--graph-yellow-8{
+                     background-color:$color-graph-yellow-8;
+                }
+                &--graph-yellow-14{
+                     background-color:$color-graph-yellow-14;
+                }
+                &--graph-yellow-20{
+                     background-color:$color-graph-yellow-20;
+                }
+
+                &--graph-pink-3{
+                     background-color:$color-graph-pink-3;
+                }
+                &--graph-pink-9{
+                     background-color:$color-graph-pink-9;
+                }
+                &--graph-pink-15{
+                     background-color:$color-graph-pink-15;
+                }
+                &--graph-pink-21{
+                     background-color:$color-graph-pink-21;
+                }
+
+                &--graph-green-4{
+                     background-color:$color-graph-green-4;
+                }
+                &--graph-green-10{
+                     background-color:$color-graph-green-10;
+                }
+                &--graph-green-16{
+                     background-color:$color-graph-green-16;
+                }
+                &--graph-green-22{
+                     background-color:$color-graph-green-22;
+                }
+
+                &--graph-purple-5{
+                     background-color:$color-graph-purple-5;
+                }
+                &--graph-purple-11{
+                     background-color:$color-graph-purple-11;
+                }
+                &--graph-purple-17{
+                     background-color:$color-graph-purple-17;
+                }
+                &--graph-purple-23{
+                     background-color:$color-graph-purple-23;
+                }
+
+                &--graph-blue-6{
+                     background-color:$color-graph-blue-6;
+                }
+                &--graph-blue-12{
+                     background-color:$color-graph-blue-12;
+                }
+                &--graph-blue-18{
+                     background-color:$color-graph-blue-18;
+                }
+                &--graph-blue-24{
+                     background-color:$color-graph-blue-24;
+                }
+
+                
+        }    
+    }
+
+    &__link-list--white {
+        
+        width: 100%;
+        color: $color-white;
+        font-size: $default-font-size;
+        line-height: $default-line-height;
+        
+        
+        li{
+            
+           
+            list-style: none;
+
+            background-image: url(../../img/base/chevron-thin-right-white.svg);
+            
+            background-repeat: no-repeat;
+            background-size: 1rem;
+
+            background-position: 4px;
+            padding: 0 4rem;
+
+            transition: all .2s;
+            margin-bottom: 1rem;
+
+            
+            
+        }
+        li:hover{   
+            color: $color-white;        
+            background-position: 8px;
+            padding: 0 4rem;
+        }
+       li:visited{   
+            color: $color-white; 
+        }
+        
+        
+    }
+
+    &__icon-list {
+
+        width: 100%;
+        height: 7rem;
+
+        &__item {
+
+            width: 100%;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid $color-grey-tertiary;
+            }
+           
+            &__icon {
+                flex: 0 0 6.5rem;
+                width: 6.5rem;        
+                height: 6.5rem;  
+                margin-right: 1rem;  
+                background-color: $color-turq-primary;  
+                border-radius: 1.2rem;  
+                box-shadow:  0px 0px 10px rgba($color-black, 0.3);
+                overflow: hidden;
+            }
+
+            &__label {
+                font-size: $default-font-size;
+                line-height: $default-line-height;
+                color: $color-black;
+                flex: 0 0 60%
+            }
+            &__amount {
+
+                text-align: right;
+                
+                &__value {
+                    font-size: $default-font-size;
+                    line-height: $default-line-height;
+                    color: $color-black;
+                }
+
+                &__frequency {
+                    font-size: $default-font-size;
+                    line-height: $default-line-height;
+                    color: $color-grey-primary;
+                }
+            }
+           
+        
+        }
+
+    }
+
+
+
+
+}

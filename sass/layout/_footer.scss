@@ -1,0 +1,389 @@
+.footer {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    @include turqGradientBG;
+
+    @include respond(tab-port) {           
+        height: 75rem;                      
+    }
+    @include respond(phone) {           
+        height: 83.375rem;                      
+    }
+
+    &__content {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+   
+        top: 10rem; 
+        @include respond(tab-land) {        
+            width: 80%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);                                 
+        }
+
+        @include respond(tab-port) {        
+            width: 90%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);                             
+        }
+
+        @include respond(phone) {           
+            width: calc(100% - 3.75rem);
+            min-width: $content-width-phone;  
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);                   
+        }
+
+        @include respond(big-desktop) {     
+            width: 80%;                    
+        }
+    }
+
+    &__nav {
+        list-style: none;
+        text-align: left; 
+        
+        @include respond(phone) {           
+            text-align: center;                          
+        }
+    } 
+    
+    &__download-store {
+        
+        @include respond(phone) {           
+            display: flex;
+            justify-content: space-around;                             
+        }
+
+        &__btn {
+            overflow: hidden;
+            margin-bottom: 1rem;
+            text-align: center;
+            background-color: $color-white;  
+            padding: .5rem 2rem;
+            display: inline-block;
+            width: 25rem; 
+            height: 4rem;
+
+            @include respond(tab-port) { 
+                width: 20rem; 
+            }
+            
+            @include respond(phone) { 
+                margin-right: 1rem; 
+                width: 20rem; 
+            }
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                border-radius: 10rem;
+                transition: all .2s;
+                position: relative;
+
+                border: none;
+                cursor: pointer;
+            }
+
+            &:visited {
+                text-decoration: none;
+                border-radius: 10rem;
+                transition: all .2s;
+                position: relative;
+            }
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+                &::after {
+                    opacity: 0;
+                }
+            } 
+
+            &:active,
+            &:focus {
+                outline: none;
+                transform: translateY(-1px);
+                box-shadow: 0 .5px 1rem rgba($color-black,.2);
+            }
+            
+            &__android {
+                background-image: 
+                url(../../img/base/download_white_android.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50%;
+
+                
+     
+            }
+
+            &__apple {
+                background-image: 
+                url(../../img/base/download_white_apple.jpg);
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size: 50%;  
+            }
+        }
+
+    }
+
+    &__socialmedia {
+        
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        @include respond(phone) { 
+            justify-content: center;  
+        }
+
+        &__btn {
+            margin-right: 1rem;
+            overflow: hidden;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+  
+            @include respond(tab-port) { 
+                width: 20px;
+                height: 20px;    
+            }
+            
+            @include respond(phone) { 
+                width: 30px;
+                height: 30px;    
+            }
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                border-radius: 10rem;
+                transition: all .2s;
+                position: relative; 
+                border: none;
+                cursor: pointer;
+
+                
+            }
+
+            &:visited {
+                text-decoration: none;
+                border-radius: 10rem;
+                transition: all .2s;
+                position: relative;
+            }
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba($color-black,.2);
+                
+
+                &::after {
+                    opacity: 0;
+                }
+            } 
+
+            &:active,
+            &:focus {
+                outline: none;
+                transform: translateY(-1px);
+                box-shadow: 0 .5px 1rem rgba($color-black,.2);
+            } 
+            
+            &__facebook {
+                background-image: url(../../img/base/icon_facebook.svg);
+                background-position: center;
+                background-repeat: no-repeat;    
+            }
+            &__twitter {
+                background-image: url(../../img/base/icon_twitter.svg);
+                background-position: center;
+                background-repeat: no-repeat;    
+            }
+            &__instagram {
+                background-image: url(../../img/base/icon_instagram.svg);
+                background-position: center;
+                background-repeat: no-repeat;    
+            }
+            &__linkedin {
+                background-image: url(../../img/base/icon_linkedin.svg);
+                background-position: center;
+                background-repeat: no-repeat;    
+            }
+            &__youtube {
+                background-image: url(../../img/base/icon_youtube.svg);
+                background-position: center;
+                background-repeat: no-repeat;   
+            }
+        }
+
+    }
+
+    &--headingallign {
+        
+        text-align: left;
+        
+        @include respond(phone) {           
+            text-align: center; 
+            // padding-top: 3rem;                           
+        }
+
+    }
+    
+    &__link {
+
+        text-decoration: none;
+        font-size: $default-font-size;
+        font-family: "FNBSansRegular", sans-serif;
+        color: $color-white;
+        padding: 0.5rem 0;
+                    
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            font-size: $default-font-size;
+            color: $color-white;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            margin-left: 10px;
+        }
+    }
+
+    &__legal {
+     
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: $color-white;
+        display: block;
+        
+        &__nav {
+            position: relative; 
+            width: 80%;
+            margin: 0 auto;
+            list-style: none;
+            text-decoration: none;
+
+            font-size: $tiny-font-size;
+            color: $color-black;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+          
+
+            height: $grid-row-height-02;
+
+            @include respond(phone) {  
+                font-size: $tiny-font-size-phone;
+                text-align: center;         
+                height: 14.375rem;
+                flex-direction: column;
+                justify-content: center;                      
+            }
+
+        }
+        
+        &__nav u {
+            flex: 0 0 21rem;
+
+            @include respond(phone) { 
+                flex: 0 0 0;   
+            }
+        }
+    
+        &__link {
+            position: relative;
+            padding: 0 .5rem;
+            float: left;
+            cursor: pointer;
+
+            &:not(:last-child) {     
+                border-right: 2px solid $color-grey-primary;
+            }
+
+            @include respond(phone) {           
+                font-size: $small-font-size-phone;  
+                line-height: 3.5rem;
+                position: relative;
+                height: 3.5rem;
+                padding: 0 2rem;
+                margin: 1.5rem 0; 
+                text-align: center;                     
+            }
+
+            &--back {
+                background-image: 
+                url(../../img/base/chevron.svg);
+                background-position: right bottom;
+                background-repeat: no-repeat; 
+                width: 10rem;
+
+                &:hover{
+                    background-position: right top;
+            }
+            }
+        }
+    
+        &__link {
+                        
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                font-size: $default-font-size;
+                color: $color-black;
+                transition: all .2s;
+
+                @include respond(phone) {           
+                    font-size: $tiny-font-size-phone;  
+                    line-height: 3.5rem;
+                    position: relative;
+                    height: 3.5rem;
+                    margin: 1.5rem 0;                      
+                }
+            }
+    
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $color-turq-primary;
+                
+
+                @include respond(phone) {           
+                    font-size: $small-font-size-phone;                         
+                }
+            }
+        }
+        
+    
+    }
+
+}
+
+
+
+ 

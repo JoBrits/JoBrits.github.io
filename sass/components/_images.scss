@@ -1,0 +1,14 @@
+.img {
+
+    &--center{
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }    
+    
+    &--lefthalf{
+        position: relative;
+        left: -50%;
+        display: block;
+    }    
+}

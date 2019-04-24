@@ -1,0 +1,9 @@
+.white-to-black {
+    
+    color: $color-white;
+
+    @include respond(phone) {
+        color: $color-black;
+    }
+
+}

@@ -1,0 +1,1723 @@
+.forex {
+
+    &__landing {
+         
+        &__slide1 {
+            background-image: 
+            url(../../img/forex_personal/pc/landing/slide_01.jpg);
+            background-size: cover;
+            background-position: right;
+
+            @include respond(phone) {           
+                background-image: 
+                url(../../img/forex_personal/ph/landing/slide_01.jpg);
+                background-size: cover;
+                background-position: bottom;
+            }    
+        }
+ 
+        &__slide2 {
+
+            @include respond(phone) {
+                min-height: 110rem;
+            }
+
+            &__top {
+                background-image: 
+                linear-gradient(
+                to right bottom, 
+                rgba($color-turq-primary, 1), 
+                rgba($color-turq-secondary, 1)
+                );
+               
+                @include respond(phone) {           
+                    background-image: 
+                    linear-gradient(
+                    to right bottom, 
+                    rgba($color-white, 1), 
+                    rgba($color-white, 1)
+                    );
+                } 
+            }
+
+            &__bottom {
+                background-image: 
+                linear-gradient(
+                to right bottom, 
+                rgba($color-white, 1), 
+                rgba($color-white, 1), 
+                // rgba($color-grey-tertiary, 1)
+                );
+
+                &__btns {
+                    top: 30rem;
+                    position: relative;
+
+                    @include respond(phone) {
+                        top: 55rem;
+                    }
+                }
+
+            }
+            
+        }
+        
+        &__slide3 {
+
+            &__top {
+                background-image: 
+                linear-gradient(
+                to right bottom, 
+                rgba($color-white, 1), 
+                rgba($color-white, 1), 
+                // rgba($color-grey-tertiary, 1)
+                );
+            }
+
+            &__bottom {
+                background-image: 
+                url(../../img/forex_personal/pc/landing/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+        
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/landing/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+        }
+
+        &__slide4 {
+
+            &__top {
+                background-image: 
+                url(../../img/forex_personal/pc/landing/slide_04_1.jpg);
+                background-size: cover;
+                background-position: top;
+        
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/landing/slide_04_1.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__bottom {
+                background-image: 
+                url(../../img/forex_personal/pc/landing/slide_04_2.jpg);
+                background-size: cover;
+                background-position: top;
+        
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/landing/slide_04_2.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+        }
+
+        &__slide5 {
+
+            &__top {
+                background-image: 
+                url(../../img/forex_personal/pc/landing/slide_05_1.jpg);
+                background-size: cover;
+                background-position: top;
+        
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/landing/slide_05_1.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__bottom {
+                background-image: 
+                url(../../img/forex_personal/pc/landing/slide_05_2.jpg);
+                background-size: cover;
+                background-position: top;
+        
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/landing/slide_05_2.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    
+                }
+                
+            }
+
+        }
+        
+    }
+    //LANDING CLOSE
+
+    &__payments {
+        
+        &__landing{
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/landing/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/landing/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+
+            }
+        }    
+        
+        &__send_money {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_money/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_money/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+
+            }
+        }    
+        
+        &__receive_money {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/receive_money/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/receive_money/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+
+            }
+        }
+        
+        &__all_methods {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/all_methods/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/all_methods/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+            }
+            
+            // &__slide2 {
+                     
+            // }
+            
+            &__slide3 {
+
+               &__top {
+                    background-image: 
+                    url(../../img/forex_personal/pc/payments/all_methods/slide_03_1.jpg);
+                    background-size: cover;
+                    background-position: top;
+            
+                    @include respond(phone) {           
+                        background-image: 
+                        url(../../img/forex_personal/ph/payments/all_methods/slide_03_1.jpg);
+                        background-size: cover;
+                        background-position: bottom;
+                    }    
+                }
+    
+                &__bottom {
+                    background-image: 
+                    url(../../img/forex_personal/pc/payments/all_methods/slide_03_2.jpg);
+                    background-size: cover;
+                    background-position: top;
+            
+                    @include respond(phone) {           
+                        background-image: 
+                        url(../../img/forex_personal/ph/payments/all_methods/slide_03_2.jpg);
+                        background-size: cover;
+                        background-position: bottom;
+                    }
+                    
+                }     
+            }
+            
+            &__slide4 {
+                
+                @include turqGradientBG;
+
+                // @include respond(phone) {           
+                    
+                // }      
+            }
+            
+            &__slide5 {
+                
+                &__top {
+                    
+                    @include turqGradientBG2;
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            min-height: 20rem;
+                            margin-bottom: 5rem;
+                        } 
+                    }
+                    
+                    &__card_2 {
+                        
+                        @include respond(phone) {           
+                            min-height: 54rem;
+                        } 
+                    }
+                       
+                }
+    
+                // &__bottom {
+                    
+            
+                //     @include respond(phone) {           
+                        
+                //     }
+                    
+                // }
+                
+            }
+        }
+
+        &__send_to_zimbabwe {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_zimbabwe/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+                @include turqGradientBG2;
+
+                &__img {
+                    &__1 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_01.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;    
+                    }
+                    &__2 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_02.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;  
+                    }
+                    &__3 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_03.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat; 
+                    }
+                }
+            }
+
+            &__slide3 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_zimbabwe/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+                &__move {
+                    position: relative;
+                    top: 0;
+                    @include respond(phone) {
+                        top: 24rem;
+                    }           
+                }
+            }
+
+            &__slide4 {
+
+                &__top {
+                    
+                    @include turqGradientBG2;
+
+                    &__img {
+                        position: absolute;
+                        left: 0;    
+                    }
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            min-height: 20rem;
+                            margin-bottom: 5rem;
+                            top: 27rem;
+                            z-index: 10;
+                        } 
+                    }
+                    
+                    &__card_2 {
+                        
+                        @include respond(phone) {           
+                            min-height: 54rem;
+                        } 
+                    }
+                       
+                }
+    
+                // &__bottom {
+                    
+            
+                //     @include respond(phone) {           
+                        
+                //     }
+                    
+                // }
+            }    
+            
+        }
+
+        &__send_to_mozambique {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_mozambique/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_mozambique/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+                @include turqGradientBG2;
+
+                &__img {
+                    &__1 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_01.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;    
+                    }
+                    &__2 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_02.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;  
+                    }
+                    &__3 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_03.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat; 
+                    }
+                }
+            }
+
+            &__slide3 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_mozambique/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_mozambique/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+                &__move {
+                    position: relative;
+                    top: 0;
+                    @include respond(phone) {
+                        top: 24rem;
+                    }           
+                }
+            }
+
+            &__slide4 {
+
+                &__top {
+                    
+                    @include turqGradientBG2;
+
+                    &__img {
+                        position: absolute;
+                        left: 0;
+                            
+                    }
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            min-height: 20rem;
+                            margin-bottom: 5rem;
+                            top: 27rem;
+                            z-index: 10;
+                        } 
+                    }
+                    
+                    &__card_2 {
+                        
+                        @include respond(phone) {           
+                            min-height: 54rem;
+                        } 
+                    }
+                       
+                }
+            }    
+            
+        }
+
+        &__send_to_swaziland {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_swaziland/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_swaziland/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+                
+                &__image {
+                    position: absolute;
+                    right: 0;
+                    top: 20rem;   
+                }    
+            }
+
+            &__slide3 {
+
+                @include respond(phone) {           
+                    min-height: 75rem;
+                } 
+
+                &__top {
+                    
+                    @include turqGradientBG2;
+
+                    &__img {
+                        position: absolute;
+                        left: 0;
+                            
+                    }
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            margin-bottom: 5rem;
+                            z-index: 10;
+                        } 
+                    }    
+            
+                }
+            }
+        }
+
+        &__send_to_swaziland {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_swaziland/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_swaziland/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+                
+                &__image {
+                    position: absolute;
+                    right: 0;
+                    top: 20rem;   
+                }    
+            }
+
+            &__slide3 {
+
+                @include respond(phone) {           
+                    min-height: 75rem;
+                } 
+
+                &__top {
+                    
+                    @include turqGradientBG2;
+
+                    &__img {
+                        position: absolute;
+                        left: 0;
+                            
+                    }
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            margin-bottom: 5rem;
+                            z-index: 10;
+                        } 
+                    }    
+            
+                }
+            }
+                
+        }
+
+        &__send_to_lesotho {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_to_lesotho/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_to_lesotho/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+                
+                &__image {
+                    position: absolute;
+                    right: 0;
+                    top: 20rem;   
+                }    
+            }
+
+            &__slide3 {
+
+                @include respond(phone) {           
+                    min-height: 75rem;
+                } 
+
+                &__top {
+                    
+                    @include turqGradientBG2;
+
+                    &__img {
+                        position: absolute;
+                        left: 0;
+                            
+                    }
+            
+                    &__card_1 {
+                        
+                        @include respond(phone) {           
+                            margin-bottom: 5rem;
+                            z-index: 10;
+                        } 
+                    }    
+            
+                }
+            }
+                
+        }
+
+        &__send_via_moneyGram {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_via_moneygram/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_via_moneygram/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }    
+            }
+
+            &__slide2 {
+
+                &__img {
+                    position: absolute;
+                    top: 10rem;
+                    width: 500px; 
+                    
+                    @include respond(phone) { 
+                        top: 20rem;   
+                    }
+                }
+
+            }
+
+            &__slide3 {
+
+                @include turqGradientBG2;
+
+                &__img {
+                    
+                    &__1 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_01.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;    
+                    }
+                    &__2 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_02.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat;  
+                    }
+                    &__3 {
+                        background-image:url(../../img/forex_personal/pc/payments/send_to_zimbabwe/slide_02_img_03.jpg);
+                        background-size: 105%;
+                        background-position: center;
+                        background-repeat: no-repeat; 
+                    }
+                }    
+            }
+
+            &__slide4 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/send_via_moneygram/slide_04.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/send_via_moneygram/slide_04.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+                &__move-down {
+
+                    @include respond(phone){
+                        top:19rem; 
+                        position: relative;
+                    }
+                     
+                }
+            }
+        }
+        
+        &__paypal {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/paypal/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/paypal/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                } 
+            }
+            
+            &__slide3 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/paypal/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/paypal/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                } 
+            }
+        }
+
+        &__global_payments {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/global_payments/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/global_payments/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                } 
+            }
+
+            &__slide3 {
+                @include turqGradientBG;    
+            }
+
+            &__slide4 {
+
+                
+
+
+                background-image: 
+                url(../../img/forex_personal/pc/payments/global_payments/slide_04.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/global_payments/slide_04.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                &__push {
+                    @include respond(phone) {           
+                        min-height: 85rem;
+                    }
+                }
+                
+                &__wrap {
+                    display: inline;
+
+                    @include respond(phone) {
+                        top: -3rem;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+
+                    }
+                }
+            }
+
+        }
+        
+        &__global_receipts {
+            
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/payments/global_receipts/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/global_receipts/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                } 
+            }
+
+            &__slide3 {
+                @include turqGradientBG;    
+            }
+
+            &__slide4 {
+
+                
+
+
+                background-image: 
+                url(../../img/forex_personal/pc/payments/global_receipts/slide_04.jpg);
+                background-size: cover;
+                background-position: top;
+    
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/payments/global_receipts/slide_04.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                &__push {
+                    @include respond(phone) {           
+                        min-height: 85rem;
+                    }
+                }
+                
+                &__wrap {
+                    display: inline;
+
+                    @include respond(phone) {
+                        top: -3rem;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+
+                    }
+                }
+            }
+
+        }
+    
+    }
+    //PAYMENTS CLOSE 
+
+    &__investments {
+        
+        &__slide1 {
+            background-image: 
+            url(../../img/forex_personal/pc/investments/slide_01.jpg);
+            background-size: cover;
+            background-position: top;
+            
+            @include respond(phone) {           
+                background-image: 
+                url(../../img/forex_personal/ph/investments/slide_01.jpg);
+                background-size: cover;
+                background-position: bottom;
+            }      
+            
+        }
+        
+        &__slide2 {
+            
+            
+            &__btns { 
+                
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+
+                @include respond(phone) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &__slide3 {
+            background-image: 
+            url(../../img/forex_personal/pc/investments/slide_03.jpg);
+            background-size: cover;
+            background-position: top;
+            
+            @include respond(phone) {           
+                background-image: 
+                url(../../img/forex_personal/ph/investments/slide_03.jpg);
+                background-size: cover;
+                background-position: bottom;
+            }      
+            
+        }
+        &__slide4 {
+            background-image: 
+            url(../../img/forex_personal/pc/investments/slide_04.jpg);
+            background-size: cover;
+            background-position: top;
+            
+            @include respond(phone) {           
+                background-image: 
+                url(../../img/forex_personal/ph/investments/slide_04.jpg);
+                background-size: cover;
+                background-position: bottom;
+            }      
+            
+        }
+
+    }
+    //INVESTMENTS CLOSE 
+    
+    &__travel {
+        
+        &__landing {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/landing/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/landing/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide2 {
+                
+                
+                &__flex {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+                    margin-bottom: 5rem;
+                }
+
+                &__img1,
+                &__img2 {
+                    width: 300px;
+                    height: 200px;
+                    margin: 0 auto;
+                }
+
+                @include respond(phone) {           
+                    min-height: 150rem;
+                }      
+                
+            }
+
+            &__slide4 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/landing/slide_04.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/landing/slide_04.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+
+                    min-height: 130rem;
+                }
+                
+                &__flex {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+                    margin-bottom: 5rem;
+                }
+                
+            }
+
+        }
+        
+        &__foreign_notes {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/foreign_notes/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/foreign_notes/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/foreign_notes/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/foreign_notes/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+
+                    min-height: 130rem;
+                }
+                
+            }
+
+        }    
+        
+        &__cash_pasport {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/cash_pasport/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/cash_pasport/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/cash_pasport/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/cash_pasport/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+        }    
+        
+        &__pay_in_advance {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/pay_in_advance/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/pay_in_advance/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/pay_in_advance/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/pay_in_advance/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                .word-break {
+                    word-break: break-word;
+                    hyphens: auto;
+                }
+                
+            }
+
+        }  
+
+        &__direct_payment {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/direct_payment/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/direct_payment/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/direct_payment/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/direct_payment/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                .word-break {
+                    word-break: break-word;
+                    hyphens: auto;
+                }
+                
+            }
+
+        }    
+
+        &__travel_insurance {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/travel_insurance/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/travel_insurance/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/travel_insurance/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/travel_insurance/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                .word-break {
+                    word-break: break-word;
+                    hyphens: auto;
+                }
+                
+            }
+
+        }    
+
+        &__travel_insurance_app {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/travel_insurance_app/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/travel_insurance_app/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/travel/travel_insurance_app/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/travel_insurance_app/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                .word-break {
+                    word-break: break-word;
+                    hyphens: auto;
+                }
+                
+            }
+
+        } 
+
+        &__while_youre_travelling {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/travel/while_youre_travelling/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/travel/while_youre_travelling/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+
+        }    
+
+    }
+    //TRAVEL CLOSE 
+
+    &__non_resident_banking {
+        
+        &__landing {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/landing/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/landing/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide2 {
+                
+                @include respond(tab-port) {
+                    min-height: 50rem;
+                }
+                @include respond(phone) {
+                    min-height: 40rem;
+                }
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/landing/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/landing/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+            
+            &__slide4 {
+
+                .word-break {
+                    word-break: break-all;
+                    hyphens: auto;
+                }   
+            }
+
+            &__slide5 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/landing/slide_05.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/landing/slide_05.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+        }
+        
+        &__home_loan {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/home_loan/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/home_loan/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+           
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/home_loan/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/home_loan/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    min-height: 95rem;
+                }
+                
+            }
+            
+            &__slide4 {
+  
+            }
+
+            &__slide5 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/home_loan/slide_05.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/home_loan/slide_05.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+        }
+
+        &__cheque_account {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/cheque_account/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/cheque_account/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/cheque_account/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/cheque_account/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    min-height: 95rem;
+                }
+                
+            }
+           
+        }
+
+        &__investment_accounts {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+            &__slide4 {
+                &__image {
+                    overflow: hidden;    
+                }
+            }
+
+            &__slide5 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts/slide_05.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts/slide_05.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    min-height: 95rem;
+                }
+                
+            }
+           
+        }
+
+        &__investment_accounts_money_on_call {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_money_on_call/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_money_on_call/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_money_on_call/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_money_on_call/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+           
+           
+        }
+
+        &__investment_accounts_32_day {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_32_day/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_32_day/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_32_day/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_32_day/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+           
+           
+        }
+
+        &__investment_accounts_fixed_deposit {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_fixed_deposit/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_fixed_deposit/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/investment_accounts_fixed_deposit/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/investment_accounts_fixed_deposit/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+           
+           
+        }
+
+        &__foreign_currency {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/foreign_currency/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/foreign_currency/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+ 
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/non_resident_banking/foreign_currency/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/non_resident_banking/foreign_currency/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }
+                
+            }
+
+           
+           
+        }
+
+    }
+    //NON RES CLOSE
+
+    &__regulatory_services {
+        
+        &__landing {
+
+            &__slide1 {
+                background-image: 
+                url(../../img/forex_personal/pc/regulatory_services/slide_01.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/regulatory_services/slide_01.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                }      
+                
+            }
+            
+            &__slide2 {
+                
+                @include respond(tab-port) {
+                    min-height: 50rem;
+                }
+                @include respond(phone) {
+                    min-height: 40rem;
+                }
+            }
+            
+            &__slide3 {
+                
+                background-image: 
+                url(../../img/forex_personal/pc/regulatory_services/slide_03.jpg);
+                background-size: cover;
+                background-position: top;
+                
+                @include respond(phone) {           
+                    background-image: 
+                    url(../../img/forex_personal/ph/regulatory_services/slide_03.jpg);
+                    background-size: cover;
+                    background-position: bottom;
+                    min-height: 100rem;
+                }
+                
+            }
+                
+        }
+
+    }
+    //RUEGULATORY CLOSE
+
+//FOREX CLOSE    
+}
