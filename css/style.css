@@ -1038,6 +1038,8 @@ p,
         .flip-card__side--back {
           transform: rotateY(0deg);
           border-radius: 0 0 24px 24px; } }
+    .flip-card__side--square {
+      border-radius: 4px; }
   .flip-card:hover .flip-card__side--front {
     transform: rotateY(-180deg); }
     @media only screen and (max-width: 56.25em) {
@@ -1582,10 +1584,10 @@ p,
   flex-direction: column; }
   .spacer--between--row {
     flex-direction: row; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .spacer--between--t-around {
       justify-content: space-around; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .spacer--between--t-between {
       justify-content: space-between; } }
   @media only screen and (max-width: 37.5em) {
@@ -1598,10 +1600,10 @@ p,
 .spacer--around {
   display: flex;
   justify-content: space-around; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .spacer--around--t-around {
       justify-content: space-around; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .spacer--around--t-between {
       justify-content: space-between; } }
   @media only screen and (max-width: 37.5em) {
@@ -2041,6 +2043,18 @@ p,
     position: relative;
     overflow-y: auto;
     height: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .row__height100--tp {
+        min-height: 100%;
+        position: relative;
+        overflow-y: auto;
+        height: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .row__height100--p {
+        min-height: 100%;
+        position: relative;
+        overflow-y: auto;
+        height: auto; } }
   .row [class^="col-"] {
     float: left;
     display: block;
