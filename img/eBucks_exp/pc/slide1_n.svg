@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="151px" viewBox="0 0 115 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>slide1_n</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.8683513%" y1="0%" x2="74.048769%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M74.3169877,140.626976 L43.3012259,76.0827403 C36.4535902,61.4044562 31.2171629,47.3293891 25.5779335,32.8521773 L24.9737303,32.8521773 C26.3835377,45.5197377 27.591944,58.7905151 27.591944,72.6645098 L27.591944,139.822687 C27.591944,148.468799 23.3625219,150.680596 13.6952715,150.680596 C4.22942207,150.680596 0,148.468799 0,139.822687 L0,13.7503007 C0,3.89775375 3.02101576,0.881667956 19.3345009,0.881667956 C35.0437828,0.881667956 39.0718039,3.0934642 42.6970228,11.1363596 L72.3029772,75.0773784 C79.9562172,90.7610245 84.9912434,104.232874 89.2206655,118.710086 L89.8248687,118.710086 C88.4150613,105.640381 87.408056,86.337432 87.408056,73.6698717 L87.408056,11.337432 C87.408056,2.89239182 91.6374781,0.68059557 101.103327,0.68059557 C110.770578,0.68059557 115,2.89239182 115,11.337432 L115,138.616252 C115,147.66451 112.180385,150.479523 96.6725044,150.479523 C81.5674256,150.479523 77.9422067,148.267727 74.3169877,140.626976 Z" id="path-2"></path>
+        <filter x="-3.9%" y="-3.0%" width="107.8%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="eBucks-Opt-1-Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slide1_n" fill-rule="nonzero">
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

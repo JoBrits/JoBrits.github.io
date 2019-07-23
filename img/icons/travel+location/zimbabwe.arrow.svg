@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>travel+location/zimbabwe.arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-26.9%" y="-23.3%" width="153.8%" height="146.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="travel+location/zimbabwe.arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#01AAAD" x="0" y="0" width="65" height="65"></rect>
+        <g id="zimbabwe.arrow" filter="url(#filter-1)" transform="translate(13.000000, 10.000000)">
+            <path d="M22.7373514,18.5249118 L27.8535892,18.5249118 L29.9150378,26.8419706 C30.2301297,28.0807941 30.4971568,29.3910882 30.6907514,30.4406471 C30.7401514,30.1785882 30.7882162,29.988 30.7882162,29.9403529 L31.0552432,28.9159412 L31.2969027,27.8425588 C31.4184,27.3422647 31.5398973,26.8419706 31.5398973,26.7943235 L33.6494108,18.5249118 L38.7175838,18.5249118 L38.7175838,34.4205 L35.3957676,34.4205 L35.3957676,26.1272647 L35.4198,24.6025588 C35.4198,24.2915294 35.4198,23.9341765 35.4678649,23.3624118 L34.9591784,25.173 C34.8376811,25.6031471 34.7402162,25.9128529 34.7161838,25.9366765 L32.5105405,34.4205 L28.9203622,34.4205 L26.6906865,25.9605 L26.4717243,25.0790294 L26.2781297,24.4106471 C26.1566324,23.9103529 26.1326,23.8163824 25.9870703,23.3624118 C26.0351351,23.9341765 26.0351351,24.3405 26.0351351,24.6025588 L26.0591676,26.1272647 L26.0591676,34.4205 L22.7373514,34.4205 L22.7373514,18.5249118 Z" id="Fill-20" fill="#FFFFFF"></path>
+            <polygon id="Fill-24" fill="#FFFFFF" points="0 31.6555147 8.55020541 21.5755147 0.0267027027 21.5755147 0.0267027027 18.5247794 13.2178378 18.5247794 13.2178378 21.2658088 4.7156973 31.3696324 13.4087622 31.3696324 13.4087622 34.4203676 0 34.4203676"></polygon>
+            <polygon id="Fill-26" fill="#FFFFFF" points="16.0481908 34.4117647 20.0535962 34.4117647 20.0535962 18.5294118 16.0481908 18.5294118"></polygon>
+            <polygon id="Fill-28" fill="#FF9900" points="14.7130557 13.2352941 14.7130557 0 25.3941368 0 25.3941368 13.2352941 32.0978503 13.2352941 20.0535962 23.9294118 8.03738 13.2352941"></polygon>
+            <polygon id="Stroke-29" fill="#FFFFFF" fill-rule="nonzero" points="0.0265691892 43.5147059 0.0265691892 42.5147059 38.7454881 42.5147059 38.7454881 43.5147059"></polygon>
+        </g>
+    </g>
+</svg>

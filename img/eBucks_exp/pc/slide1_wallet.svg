@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1446px" height="1702px" viewBox="0 0 1446 1702" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>slide1_wallet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="63.652454%" x2="100%" y2="36.347546%" id="linearGradient-1">
+            <stop stop-color="#F47920" offset="0%"></stop>
+            <stop stop-color="#FFCC00" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-11" y="468.680596" width="1464" height="765" rx="87.5"></rect>
+        <filter x="-6.2%" y="-11.6%" width="112.4%" height="123.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="30" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="eBucks-Opt-1-Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slide1_wallet" transform="translate(721.000000, 851.180596) scale(-1, 1) rotate(-240.000000) translate(-721.000000, -851.180596) ">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

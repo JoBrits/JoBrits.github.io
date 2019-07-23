@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>money/paypal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-54.1%" y="-47.6%" width="208.1%" height="195.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="money/paypal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#01AAAD" x="0" y="0" width="65" height="65"></rect>
+        <g id="paypal" filter="url(#filter-1)" transform="translate(14.000000, 12.000000)">
+            <path d="M7.38499545,41.9453094 C8.59822273,42.080976 13.1312682,41.928351 15.2914045,41.8718233 C16.9639955,41.8280142 17.2725864,39.4128649 17.2725864,39.4128649 L17.8939955,33.3926566 C18.3237682,30.807924 18.59995,28.9354413 21.7055864,29.1092642 C25.9286318,29.3438545 29.7853136,27.5745351 29.7853136,27.5745351 C33.1784045,26.1231844 36.9561773,22.1789587 36.9998591,13.6814205 C37.0491773,4.27519826 28.6509955,5.08495868 28.6509955,5.08495868 L13.2594955,5.08495868 C13.2594955,5.08495868 11.9546773,4.8009066 11.6066318,6.52641701 C11.2571773,8.25334063 6.19290455,38.8419344 5.99985909,40.4727608 C5.99985909,40.4727608 6.17176818,41.8082295 7.38499545,41.9453094" id="Fill-1" fill="#FF9900"></path>
+            <path d="M1.38499545,36.9453094 C2.59822273,37.080976 7.13126818,36.928351 9.29140455,36.8718233 C10.9639955,36.8280142 11.2725864,34.4128649 11.2725864,34.4128649 L11.8939955,28.3926566 C12.3237682,25.807924 12.59995,23.9354413 15.7055864,24.1092642 C19.9286318,24.3438545 23.7853136,22.5745351 23.7853136,22.5745351 C27.1784045,21.1231844 30.9561773,17.1789587 30.9998591,8.68142049 C31.0491773,-0.724801736 22.6509955,0.0849586806 22.6509955,0.0849586806 L7.25949545,0.0849586806 C7.25949545,0.0849586806 5.95467727,-0.199093403 5.60663182,1.52641701 C5.25717727,3.25334063 0.192904545,33.8419344 -0.000140909091,35.4727608 C-0.000140909091,35.4727608 0.171768182,36.8082295 1.38499545,36.9453094" id="Fill-4" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
