@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_05</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-7.5%" y="-9.4%" width="115.0%" height="118.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-1014.000000, -1850.000000)">
+            <g id="home_card_icon_05" transform="translate(1014.000000, 1850.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="hand.stars" filter="url(#filter-3)" transform="translate(15.600000, 28.600000)">
+                            <path d="M40.2617647,37.0964286 C40.2617647,43.1235071 45.2676441,48.0071429 51.4455882,48.0071429 L53.6197235,48.0071429 L71.6122588,48.0071429 C74.0816471,48.0071429 76.0723676,49.9230643 76.0723676,52.3365143 L76.0723676,52.3539714 C76.0723676,54.7630571 74.0816471,56.7357143 71.6122588,56.7357143 L50.2287882,56.7357143 C46.6723324,56.7357143 43.2590294,55.3173214 40.7404324,52.8645929 L14.2884529,32.0338571 C10.7319971,29.2276214 5.57849118,29.4982071 2.34412941,32.6535857 L1.60599706,33.3736929 C0.733658824,34.2247286 0.729185294,35.6038429 1.60152353,36.4592429 L34.9472118,69.0386357 C38.3247265,72.3380357 42.9100941,74.1928571 47.6878235,74.1928571 L79.47225,74.1928571 C83.0331794,74.1928571 86.4464824,75.5719714 88.9606059,78.0290643 L93.9799059,82.9214286 L129.754721,82.9214286 L129.754721,79.5434714 C129.754721,76.0651357 128.341085,72.7264571 125.818015,70.2693643 L97.3618941,42.5474214 C92.3470676,37.6594214 85.5473029,34.9142857 78.4612324,34.9142857 L76.0723676,34.9142857 L42.4985294,34.9142857 C41.2638353,34.9142857 40.2617647,35.8918857 40.2617647,37.0964286 L40.2617647,37.0964286 Z" id="Fill-7" fill="#FFFFFF"></path>
+                            <polygon id="Fill-13" fill="#FF9900" points="107.020588 4.36428571 102.547059 4.36428571 102.547059 0 98.0735294 0 98.0735294 4.36428571 93.6 4.36428571 93.6 8.72857143 98.0735294 8.72857143 98.0735294 14.8571429 102.547059 14.8571429 102.547059 8.72857143 107.020588 8.72857143"></polygon>
+                            <polygon id="Fill-13-Copy" fill="#FFFFFF" points="138.220588 25.1642857 133.747059 25.1642857 133.747059 20.8 129.273529 20.8 129.273529 25.1642857 124.8 25.1642857 124.8 29.5285714 129.273529 29.5285714 129.273529 35.6571429 133.747059 35.6571429 133.747059 29.5285714 138.220588 29.5285714"></polygon>
+                            <polygon id="Fill-15" fill="#FF9900" points="13.4205882 98.7071429 8.94705882 98.7071429 8.94705882 103.071429 4.47352941 103.071429 4.47352941 107.435714 8.94705882 107.435714 8.94705882 111.8 13.4205882 111.8 13.4205882 107.435714 17.8941176 107.435714 17.8941176 103.071429 13.4205882 103.071429"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

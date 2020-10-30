@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_04</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-8.6%" y="-11.9%" width="117.2%" height="123.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-576.000000, -1859.000000)">
+            <g id="home_card_icon_04" transform="translate(576.000000, 1859.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="document.folder" filter="url(#filter-3)" transform="translate(28.600000, 41.600000)">
+                            <path d="M103.814286,88.4 L7.98571429,88.4 C3.5776,88.4 0,84.9056 0,80.6 L0,18.2 C0,13.8944 3.5776,10.4 7.98571429,10.4 L103.814286,10.4 C108.2224,10.4 111.8,13.8944 111.8,18.2 L111.8,80.6 C111.8,84.9056 108.2224,88.4 103.814286,88.4" id="Fill-6" fill="#FFFFFF"></path>
+                            <path d="M104.896574,88.4 L6.04837766,88.4 C2.28929365,88.4 -0.55922981,85.1767647 0.0934728787,81.6667647 L9.75508429,29.7164706 C10.4359902,26.0611765 13.7800842,23.4 17.6882423,23.4 L114.139166,23.4 C119.147249,23.4 122.942594,27.6938235 122.076353,32.3776471 L112.829732,82.0835294 C112.152855,85.735 108.804732,88.4 104.896574,88.4" id="Fill-8" fill="#FF9900"></path>
+                            <path d="M7.8,10.4 L8.48943333,10.4 C10.61385,10.4 12.6540917,9.66853333 14.1572167,8.36853333 L21.48445,2.03146667 C22.987575,0.728 25.0278167,0 27.1522333,0 L40.5561,0 C42.6805167,0 44.7207583,0.728 46.2238833,2.03146667 L53.5511167,8.36853333 C55.0542417,9.66853333 57.0944833,10.4 59.2189,10.4 L104,10.4" id="Fill-10" fill="#FF9900"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

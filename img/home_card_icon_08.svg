@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_08</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-11.5%" y="-9.8%" width="123.1%" height="119.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-1014.000000, -2174.000000)">
+            <g id="home_card_icon_08" transform="translate(1014.000000, 2174.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="share" filter="url(#filter-3)" transform="translate(39.000000, 31.200000)" fill="#FEFEFE">
+                            <path d="M59.471296,69.763456 L40.608096,57.270496 C40.629856,56.895136 40.665216,56.522496 40.665216,56.138976 C40.665216,55.021056 40.550976,53.930336 40.371456,52.864096 L60.673536,37.542336 C63.679136,39.435456 67.226016,40.547936 71.039456,40.547936 C81.805216,40.547936 90.533696,31.819456 90.533696,21.053696 C90.533696,10.287936 81.805216,1.559456 71.039456,1.559456 C60.273696,1.559456 51.545216,10.287936 51.545216,21.053696 C51.545216,22.449056 51.700256,23.809056 51.980416,25.122816 L32.186976,40.061056 C29.050816,37.909536 25.261856,36.647456 21.173696,36.647456 C10.407936,36.647456 1.679456,45.373216 1.679456,56.138976 C1.679456,66.904736 10.407936,75.633216 21.173696,75.633216 C26.007136,75.633216 30.421696,73.865216 33.827136,70.949376 L51.741056,82.816736 C51.626816,83.670816 51.545216,84.538496 51.545216,85.427936 C51.545216,96.193696 60.273696,104.919456 71.039456,104.919456 C81.805216,104.919456 90.533696,96.193696 90.533696,85.427936 C90.533696,74.659456 81.805216,65.933696 71.039456,65.933696 C66.701056,65.933696 62.708096,67.367136 59.471296,69.763456 Z" id="Fill-1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

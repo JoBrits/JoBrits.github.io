@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="75px" viewBox="0 0 43 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>footer_icon</title>
+    <defs>
+        <linearGradient x1="80.3657108%" y1="100%" x2="9.23044865%" y2="-29.3080357%" id="linearGradient-1">
+            <stop stop-color="#D25B73" offset="0.977928322%"></stop>
+            <stop stop-color="#FF9900" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-181.000000, -3125.000000)">
+            <g id="vouchers.coupons" transform="translate(181.000000, 3125.000000)">
+                <path d="M34.6236502,74.7734332 L8.39018564,74.7734332 C3.75409924,74.7734332 0,71.1238037 0,66.6387168 L0,8.13471634 C0,3.64962949 3.75409924,0 8.39018564,0 L34.6236502,0 C39.2371215,0 42.9912208,3.64962949 42.9912208,8.13471634 L42.9912208,66.6387168 C42.9912208,71.1238037 39.2371215,74.7734332 34.6236502,74.7734332" id="Fill-10" fill="#FFFFFF"></path>
+                <polygon id="Fill-12" fill="url(#linearGradient-1)" points="-7.67430773e-13 63.043288 42.9912208 63.043288 42.9912208 8.79428794 -7.67430773e-13 8.79428794"></polygon>
+                <path d="M23.7681973,69.2765635 C23.7681973,70.4857781 22.7505198,71.4751355 21.5066918,71.4751355 C20.2402486,71.4751355 19.2451862,70.4857781 19.2451862,69.2765635 C19.2451862,68.0673489 20.2402486,67.0779915 21.5066918,67.0779915 C22.7505198,67.0779915 23.7681973,68.0673489 23.7681973,69.2765635 Z" id="Stroke-15" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

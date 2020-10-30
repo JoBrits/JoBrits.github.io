@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_09</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-9.6%" y="-9.4%" width="119.2%" height="118.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-138.000000, -2507.000000)">
+            <g id="home_card_icon_09" transform="translate(138.000000, 2507.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="pay.recipiants" filter="url(#filter-3)" transform="translate(31.200000, 28.600000)">
+                            <path d="M85.4941176,31.7476281 C85.4941176,49.2829013 71.1417926,63.4952562 53.4338235,63.4952562 C35.7258544,63.4952562 21.3735294,49.2829013 21.3735294,31.7476281 C21.3735294,14.2123548 35.7258544,0 53.4338235,0 C71.1417926,0 85.4941176,14.2123548 85.4941176,31.7476281" id="Fill-5" fill="#FF9900"></path>
+                            <path d="M106.867647,100.399757 C106.867647,85.8487611 96.1808824,74.0527535 78.3696078,74.0527535 L78.3696078,74.0774461 L24.9357843,74.0774461 L24.9357843,74.0527535 C10.6867647,74.0527535 0,85.8487611 0,100.399757 L0,102.29756 L106.867647,102.29756 L106.867647,100.399757 Z" id="Fill-9" fill="#FFFFFF"></path>
+                            <polygon id="Fill-13" fill="#FF9900" points="56.9960784 109.352941 81.9318627 109.352941 81.9318627 95.2428843 56.9960784 95.2428843"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

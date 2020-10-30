@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>intro_icon3</title>
+    <defs>
+        <rect id="path-1" x="0" y="-9.09494702e-13" width="82" height="82" rx="20"></rect>
+        <filter x="-22.8%" y="-17.9%" width="145.7%" height="135.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-1" transform="translate(-1029.000000, -902.000000)">
+            <g id="Slide-2" transform="translate(159.000000, 900.000000)">
+                <g id="intro_icon3" transform="translate(870.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-1.000000, 0.000000)" id="device/contact">
+                            <rect id="Background" fill="#01AAAD" x="0" y="0" width="83" height="83"></rect>
+                            <g id="contact" filter="url(#filter-3)" transform="translate(19.153846, 12.769231)">
+                                <path d="M7.6236256,3.03271856 C7.6236256,2.12389273 11.5112402,0.513684117 13.6493797,0.513684117 C15.7875192,0.513684117 20.112357,10.4390955 20.112357,12.0932012 C20.112357,13.7473069 17.6228463,16.798157 16.6701233,17.0479432 C15.7174004,17.2977295 7.6236256,3.94154438 7.6236256,3.03271856 Z" id="Rectangle-3" fill="#FF9900"></path>
+                                <path d="M30.235635,37.8380643 C30.235635,36.9292384 33.3638939,36.0245208 35.5020334,36.0245208 C37.6401729,36.0245208 45.3235229,46.8349554 45.3235229,48.4890612 C45.3235229,50.1431669 42.6993854,52.7962603 41.7466624,53.0460466 C40.7939395,53.2958329 30.235635,38.7468901 30.235635,37.8380643 Z" id="Rectangle-3" fill="#FF9900"></path>
+                                <path d="M0.352321146,10.9365552 C0.809750657,9.39968286 5.69845762,2.96927954 6.43624716,4.10263777 C7.17403669,5.235996 14.6325214,16.9339328 15.2085537,17.5475684 C15.5925752,17.9566587 13.9276338,18.9042949 10.2137296,20.3904768 C10.6187571,25.0667382 12.0916877,29.3542413 14.6325214,33.2529861 C17.173355,37.1517308 20.1792798,40.5711961 23.6502958,43.511382 C26.6190474,39.6033676 28.3296787,37.9750283 28.7821896,38.626364 C29.460956,39.6033676 39.3425117,52.8066789 40.2400611,53.9599007 C41.1376104,55.1131225 31.882892,58.3071836 29.9935832,58.3071836 C28.1042745,58.3071836 17.7034284,55.0526805 8.83917092,41.9126488 C-0.0250865779,28.7726172 -0.105108366,12.4734276 0.352321146,10.9365552 Z" id="Rectangle" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

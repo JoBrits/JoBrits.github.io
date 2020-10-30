@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_03</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-9.0%" y="-11.2%" width="117.9%" height="122.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.300668025 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-138.000000, -1857.000000)">
+            <g id="home_card_icon_03" transform="translate(138.000000, 1857.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="Group-146" filter="url(#filter-3)" transform="translate(26.000000, 39.000000)">
+                            <path d="M104.875704,49.7467799 L28.4169522,49.7467799 L41.3671261,36.2317242 C42.674422,34.8674045 43.4833564,32.9829851 43.4833564,30.9025862 C43.4833564,26.7380193 40.2512299,23.3649086 36.2607274,23.3649086 C34.2672817,23.3649086 32.4616245,24.2091285 31.1543286,25.5734482 L0.768728051,57.2844574 L31.1507173,88.9916979 L31.1507173,88.9916979 C32.4580131,90.3597864 34.2636704,91.2040062 36.2607274,91.2040062 C40.2512299,91.2040062 43.4833564,87.8308956 43.4833564,83.6663287 C43.4833564,81.5859297 42.674422,79.7015104 41.3671261,78.3371907 L28.4169522,64.822135 L104.875704,64.822135 C108.866206,64.822135 112.098333,61.4490243 112.098333,57.2844574 C112.098333,53.1198906 108.866206,49.7467799 104.875704,49.7467799" id="Fill-10" fill="#FFFFFF"></path>
+                            <path d="M11.1657725,42.2091024 C7.07637957,42.2091024 3.75745197,38.8359917 3.75745197,34.6714249 C3.75745197,30.5068581 7.07637957,27.1337474 11.1657725,27.1337474 L87.4388325,27.1337474 L74.4886586,13.6186916 C73.1813627,12.254372 72.3724282,10.3699526 72.3724282,8.28955362 C72.3724282,4.1249868 75.6081661,0.751876109 79.5950573,0.751876109 C81.5921143,0.751876109 83.3977715,1.59609599 84.7050674,2.96041562 L115.090668,34.6714249 L84.7086787,66.3786654 C83.4013828,67.7467538 81.5921143,68.5909737 79.5950573,68.5909737 C75.6081661,68.5909737 72.3724282,65.217863 72.3724282,61.0532962 C72.3724282,58.9728972 73.1813627,57.0884778 74.4886586,55.7241582 L87.4388325,42.2091024 L11.1657725,42.2091024 Z" id="Combined-Shape" fill="#FF9900"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

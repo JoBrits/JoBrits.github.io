@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>home_card_icon_02</title>
+    <defs>
+        <rect id="path-1" x="0.816987298" y="0.316987298" width="169" height="169" rx="20"></rect>
+        <filter x="-10.4%" y="-13.0%" width="120.7%" height="126.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC-Med-1600---OBE-Help-Text-Web-Option-3" transform="translate(-1008.000000, -1506.000000)">
+            <g id="home_card_icon_02" transform="translate(1008.000000, 1506.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.816987, 0.316987)" id="device/workforce.dashboard">
+                        <rect id="Background" fill="#01AAAD" x="0" y="0" width="169" height="169"></rect>
+                        <g id="coins.hand" filter="url(#filter-3)" transform="translate(33.800000, 44.200000)">
+                            <rect id="Rectangle" fill="#FF9900" x="57.2" y="0" width="26" height="59.8" rx="1"></rect>
+                            <polygon id="Fill-9" fill="#FFFFFF" points="72.8 59.8 78 59.8 78 0 72.8 0"></polygon>
+                            <rect id="Rectangle" fill="#01AAAD" x="57.2" y="7.8" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy" fill="#01AAAD" x="57.2" y="18.2" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#01AAAD" x="57.2" y="28.6" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy-3" fill="#01AAAD" x="57.2" y="39" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy-4" fill="#01AAAD" x="57.2" y="49.4" width="26" height="2.6"></rect>
+                            <rect id="Rectangle" fill="#FF9900" x="26" y="20.8" width="26" height="39" rx="1"></rect>
+                            <polygon id="Fill-9" fill="#FFFFFF" points="41.6 59.8 46.8 59.8 46.8 20.8 41.6 20.8"></polygon>
+                            <rect id="Rectangle-Copy-2" fill="#01AAAD" x="26" y="28.6" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy-3" fill="#01AAAD" x="26" y="39" width="26" height="2.6"></rect>
+                            <rect id="Rectangle-Copy-4" fill="#01AAAD" x="26" y="49.4" width="26" height="2.6"></rect>
+                            <path d="M70.2928076,42.1140523 C70.2928076,46.9445436 66.3609866,50.8586057 61.5085784,50.8586057 L59.8009242,50.8586057 L45.6688563,50.8586057 C43.7292985,50.8586057 42.1657057,52.3941492 42.1657057,54.3284444 L42.1657057,54.3424357 C42.1657057,56.2732331 43.7292985,57.8542484 45.6688563,57.8542484 L62.4643025,57.8542484 C65.2576874,57.8542484 67.9386342,56.7174564 69.9168426,54.7516808 L90.6933015,38.0565795 C93.4866864,35.8074804 97.5344592,36.0243453 100.074858,38.5532702 L100.654617,39.1304107 C101.339787,39.8124858 101.343301,40.9177974 100.658131,41.6033704 L74.4670733,67.7146068 C71.8142361,70.3589597 68.2127021,71.8455338 64.4600794,71.8455338 L39.4953,71.8455338 C36.6984014,71.8455338 34.0174547,72.9508453 32.0427599,74.9201187 L28.1003979,78.8411765 L0.00140547667,78.8411765 L0.00140547667,76.1338627 C0.00140547667,73.3460991 1.11173205,70.6702658 3.09345416,68.7009924 L25.444047,46.4828312 C29.3828953,42.5652712 34.7237067,40.3651416 40.2893943,40.3651416 L42.1657057,40.3651416 L68.5359618,40.3651416 C69.5057407,40.3651416 70.2928076,41.1486536 70.2928076,42.1140523 L70.2928076,42.1140523 Z" id="Fill-19" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
